@@ -1,0 +1,737 @@
+<!doctype html>
+<html lang="hu">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Film | Sztorimix | Gertner Balázs</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="../../ico/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="../../ico/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="../../ico/favicon-16x16.png" />
+  <link rel="manifest" href="../../ico/site.webmanifest" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+  <link rel="stylesheet" href="../../css/style.css" />
+</head>
+
+<body>
+  <div id="sitetop" class="div-global-shell">
+    <!-- ================================
+         FEJLÉC
+    ================================= -->
+    <header class="header-main-site">
+      <h1 class="div-hidden-heading">Weboldal Header</h1>
+
+      <!-- Aktuális dátum -->
+      <section>
+        <div class="div-top-info-wrap">
+          <div class="div-top-info-inner">
+            <div class="div-live-date-text" id="divLiveDateText">
+              Dátum betöltése...
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================================
+         MENÜ
+    ================================= -->
+
+      <!-- Fő menüsor -->
+      <div class="div-content-width">
+        <div class="div-header-main-row">
+          <!-- Logó -->
+          <div class="div-site-logo-box">
+            <a href="../../index.html" class="a-site-logo-link">
+              <img src="../../img/logo.png" alt="Site logo" class="img-site-logo" />
+            </a>
+          </div>
+
+          <!-- Desktop menü -->
+          <nav class="nav-desktop-menu">
+            <ul class="ul-desktop-menu-root">
+              <li class="li-desktop-menu-item">
+                <a href="../../index.html" class="a-desktop-menu-link"><span class="material-symbols-outlined">
+                    foundation </span>Kezdőlap</a>
+              </li>
+              <li class="li-desktop-menu-item">
+                <a class="a-desktop-menu-link a-desktop-menu-link-active"><span class="material-symbols-outlined">
+                    category </span>Cikkek</a>
+                <ul class="ul-desktop-submenu">
+                  <li class="li-desktop-menu-item">
+                    <a href="../zene/zene.html" class="a-desktop-submenu-link"><span class="material-symbols-outlined">
+                        music_note </span>Zene</a>
+                  </li>
+                  <li class="li-desktop-menu-item">
+                    <a href="../film/film.html" class="a-desktop-submenu-link"><span class="material-symbols-outlined">
+                        movie </span>Film</a>
+                  </li>
+                  <li class="li-desktop-menu-item">
+                    <a href="../sport/sport.html" class="a-desktop-submenu-link"><span
+                        class="material-symbols-outlined">
+                        sports_and_outdoors </span>Sport</a>
+                  </li>
+                  <li class="li-desktop-menu-item">
+                    <a href="../utazas/utazas.html" class="a-desktop-submenu-link"><span
+                        class="material-symbols-outlined">
+                        checked_bag </span>Utazás</a>
+                  </li>
+                  <li class="li-desktop-menu-item">
+                    <a href="../tech/tech.html" class="a-desktop-submenu-link"><span class="material-symbols-outlined">
+                        rocket </span>Tech</a>
+                  </li>
+                  <li class="li-desktop-menu-item">
+                    <a href="../humor/humor.html" class="a-desktop-submenu-link"><span
+                        class="material-symbols-outlined">
+                        comedy_mask </span>Humor</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="li-desktop-menu-item">
+                <a href="../../szerkesztok.html" class="a-desktop-menu-link"><span class="material-symbols-outlined">
+                    article_person </span>Szerkesztők</a>
+              </li>
+            </ul>
+          </nav>
+
+          <!-- Hamburger -->
+          <div class="div-header-action">
+            <button class="button-mobile-menu-toggle" id="buttonMobileMenuToggle" aria-label="Mobil menü megyitása">
+              <span class="span-mobile-menu-line"></span>
+              <span class="span-mobile-menu-line"></span>
+              <span class="span-mobile-menu-line"></span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mobil menü -->
+      <div class="div-mobile-menu-panel" id="divMobileMenuPanel">
+        <ul class="ul-mobile-menu-root">
+          <li class="li-mobile-menu-item">
+            <a href="../../index.html" class="a-mobile-menu-link"><span class="material-symbols-outlined"> foundation
+              </span>Kezdőlap</a>
+          </li>
+          <li class="li-mobile-menu-item">
+            <a href="../zene/zene.html" class="a-mobile-menu-link"><span class="material-symbols-outlined">
+                music_note </span>Zene</a>
+          </li>
+          <li class="li-mobile-menu-item">
+            <a href="../film/film.html" class="a-mobile-menu-link"><span class="material-symbols-outlined">
+                movie </span>Film</a>
+          </li>
+          <li class="li-mobile-menu-item">
+            <a href="../sport/sport.html" class="a-mobile-menu-link"><span class="material-symbols-outlined">
+                sports_and_outdoors </span>Sport</a>
+          </li>
+          <li class="li-mobile-menu-item">
+            <a href="../utazas/utazas.html" class="a-mobile-menu-link"><span class="material-symbols-outlined">
+                checked_bag </span>Utazás</a>
+          </li>
+          <li class="li-mobile-menu-item">
+            <a href="../tech/tech.html" class="a-mobile-menu-link"><span class="material-symbols-outlined">
+                rocket </span>Tech</a>
+          </li>
+          <li class="li-mobile-menu-item">
+            <a href="../humor/humor.html" class="a-mobile-menu-link"><span class="material-symbols-outlined">
+                comedy_mask </span>Humor</a>
+          </li>
+          <li class="li-mobile-menu-item">
+            <a href="../../szerkesztok.html" class="a-mobile-menu-link"><span class="material-symbols-outlined">
+                article_person </span>Szerkesztők</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <!-- ================================
+         FŐ TARTALOM
+    ================================= -->
+
+    <!-- Kenyérmorzsa -->
+    <div class="div-stories-content">
+      <section class="section-page-hero-shell section-page-hero-bg-movie">
+        <div class="div-site-wraper">
+          <div class="div-page-hero-center">
+            <h1 class="h1-page-main-title div-feature-animate-title">Film</h1>
+          </div>
+        </div>
+      </section>
+
+      <!-- Tartalom -->
+      <main class="section-blog-content-shell">
+        <div class="div-site-wraper">
+          <div class="div-blog-list-wrap">
+            <!-- Post 1 -->
+            <article id="post-1" class="article-post-card-box">
+              <div class="div-post-text-box div-feature-animate-title">
+                <h2 class="h2-post-card-title">
+                  <a href="film_1.html" class="a-post-title-link">Mátrix: Új titkok 27 év után amiket még biztosan te
+                    sem
+                    vettél észre!</a>
+                </h2>
+
+                <ul class="ul-post-meta-list">
+                  <li>
+                    <img src="../../img/writer_robert_e_45x44.jpg" alt="Éliás Róbert" class="img-meta-avatar" />
+                  </li>
+                  <li class="li-post-meta-item2">
+                    <span class="span-post-meta"></span>
+                    <a href="../../szerkesztok.html#eliasrobert" class="a-post-author-link">Éliás Róbert</a>
+                  </li>
+                  <li class="li-post-meta-item2">
+                    <span class="span-dot-date2"></span>
+                    <span class="span-post-meta">2026.03.14.</span>
+                  </li>
+                  <li class="li-post-meta-item"> <a href="film_1.html#komment"><span class="span-post-meta"></span>
+                      Kommentek (2)</a>
+                  </li>
+                </ul>
+
+                <div class="div-post-image-box div-feature-animate-image">
+                  <a href="film_1.html" class="a-post-title-link"><img
+                      src="../../img/category_movies_matrix_868x514.jpg" alt="Mátrix kód"
+                      class="img-post-cover-photo" /></a>
+
+                </div>
+
+                <p class="p-post-card-summary">
+                  A Mátrix első huszonöt perce már elképesztő sűrűségben van
+                  tele elrejtett jelentésekkel: szimbólumokkal, filozófiai
+                  utalásokkal és finom előreutalásokkal — olyannyira, hogy sok
+                  film teljes játékideje alatt sem jut el idáig.
+                </p>
+
+                <a href="film_1.html" class="button-post-toggle-more">
+                  Folytatom...
+                </a>
+
+              </div>
+            </article>
+
+            <!-- Post 2 -->
+            <article class="article-post-card-box">
+              <div class="div-post-text-box div-feature-animate-title">
+                <h2 class="h2-post-card-title">
+                  Titanic: A film, ami majdnem sosem készült el – így mentette meg az utolsó pillanatban Hollywood!
+                </h2>
+
+                <ul class="ul-post-meta-list">
+                  <li>
+                    <img src="../../img/writer_evelin_m_45x44.jpg" alt="Mór Evelin" class="img-meta-avatar" />
+                  </li>
+                  <li class="li-post-meta-item2">
+                    <span class="span-post-meta"></span>
+                    <a href="../../szerkesztok.html#morevelin" class="a-post-author-link">Mór Evelin</a>
+                  </li>
+                  <li class="li-post-meta-item2">
+                    <span class="span-dot-date2"></span>
+                    <span class="span-post-meta">2026.03.08.</span>
+                  </li>
+                  <li class="li-post-meta-item">
+                    <span class="span-post-meta"></span>
+                    Kommentek (14)
+                  </li>
+                </ul>
+
+                <div class="div-post-image-box div-feature-animate-image">
+                  <img src="../../img/category_movies_titanic_1536x1024.jpg" alt="Titanic témájú kép"
+                    class="img-post-cover-photo" />
+
+                </div>
+
+                <p class="p-post-card-summary">
+                  A Titanic ma már filmtörténeti legenda, de kevesen tudják, hogy majdnem teljes bukás lett belőle még a
+                  bemutató előtt. A költségvetés elszállt, a forgatás tele volt problémákkal, és a stúdiók komolyan
+                  fontolgatták a projekt leállítását.
+                </p>
+
+                <button class="button-post-toggle-more" type="button">
+                  Folytatom...
+                </button>
+
+                <div class="div-post-hidden-content">
+                  <p class="p-post-hidden-text">
+                    James Cameron megszállottsága azonban mindent felülírt: saját fizetéséről is lemondott, csak hogy
+                    befejezhesse a filmet. A kulisszák mögött zajló dráma legalább annyira izgalmas volt, mint maga a
+                    történet.
+                  </p>
+
+                  <p class="p-post-hidden-text">
+                    Végül egy merész marketingdöntés és a közönség váratlan reakciója fordította meg a helyzetet. Ez a
+                    film tökéletes példája annak, amikor egy majdnem kudarc minden idők egyik legsikeresebb alkotásává
+                    válik.
+                  </p>
+                </div>
+              </div>
+            </article>
+
+            <!-- Post 3 -->
+            <article class="article-post-card-box">
+              <div class="div-post-text-box div-feature-animate-title">
+                <h2 class="h2-post-card-title">
+                  Harry Potter: A szereplők, akiket teljesen más színészek játszhattak volna!
+                </h2>
+
+                <ul class="ul-post-meta-list">
+                  <li>
+                    <img src="../../img/writer_livia_k_45x44.jpg" alt="Dr. Kovács Lívia" class="img-meta-avatar" />
+                  </li>
+                  <li class="li-post-meta-item2">
+                    <span class="span-post-meta"></span>
+                    <a href="../../szerkesztok.html#drkovacslivia" class="a-post-author-link">Dr. Kovács Lívia</a>
+                  </li>
+                  <li class="li-post-meta-item2">
+                    <span class="span-dot-date2"></span>
+                    <span class="span-post-meta">2026.03.02.</span>
+                  </li>
+                  <li class="li-post-meta-item">
+                    <span class="span-post-meta"></span>
+                    Kommentek (6)
+                  </li>
+                </ul>
+
+                <div class="div-post-image-box div-feature-animate-image">
+                  <img src="../../img/category_movies_harrypotter_1536x1024.jpg" alt="Harry Potter Cosplay"
+                    class="img-post-cover-photo" />
+
+                </div>
+
+                <p class="p-post-card-summary">
+                  El tudnád képzelni Harryt, Hermionét vagy akár Pitont teljesen más arcokkal? Pedig nagyon közel
+                  álltunk hozzá. A casting során rengeteg ismert színész neve felmerült, sőt voltak, akik vissza is
+                  utasították a szerepeket.
+                </p>
+
+                <button class="button-post-toggle-more" type="button">
+                  Folytatom...
+                </button>
+
+                <div class="div-post-hidden-content">
+                  <p class="p-post-hidden-text">
+                    Egyes döntések mögött egészen meglepő okok álltak: időhiány, kreatív nézeteltérések vagy egyszerűen
+                    rossz megérzés. A készítők végül olyan színészeket választottak, akik ma már elképzelhetetlenek a
+                    karaktereik nélkül.
+                  </p>
+
+                  <p class="p-post-hidden-text">
+                    De mi lett volna, ha másképp alakul? Ez a cikk bemutatja az alternatív lehetőségeket, és azt is,
+                    mennyire más lett volna a varázsvilág hangulata egy-egy eltérő döntéssel.
+                  </p>
+                </div>
+              </div>
+            </article>
+
+            <!-- Post 4 -->
+            <article id="post-4" class="article-post-card-box">
+              <div class="div-post-text-box div-feature-animate-title">
+                <h2 class="h2-post-card-title">
+                  A Gyűrűk Ura: Így változtatták meg a könyvhöz képest a legfontosabb jeleneteket!
+                </h2>
+
+                <ul class="ul-post-meta-list">
+                  <li>
+                    <img src="../../img/writer_robert_e_45x44.jpg" alt="Éliás Róbert" class="img-meta-avatar" />
+                  </li>
+                  <li class="li-post-meta-item2">
+                    <span class="span-post-meta"></span>
+                    <a href="../../szerkesztok.html#eliasrobert" class="a-post-author-link">Éliás Róbert</a>
+                  </li>
+                  <li class="li-post-meta-item2">
+                    <span class="span-dot-date2"></span>
+                    <span class="span-post-meta">2026.04.02.</span>
+                  </li>
+                  <li class="li-post-meta-item">
+                    <span class="span-post-meta"></span>
+                    Kommentek (7)
+                  </li>
+                </ul>
+
+                <div class="div-post-image-box div-feature-animate-image">
+                  <img src="../../img/category_movies_gyurukura_1536x1152.jpg" alt="Gyűrűk Ura könyv"
+                    class="img-post-cover-photo" />
+
+                </div>
+
+                <p class="p-post-card-summary">
+                  A Gyűrűk Ura filmek hatalmas sikert arattak, de a rajongók jól tudják, hogy számos ponton eltérnek
+                  Tolkien eredeti művétől. Egyes jelenetek kimaradtak, másokat teljesen átírtak, hogy jobban működjenek
+                  a vásznon. De vajon ezek a változtatások javítottak vagy rontottak a történeten?
+                </p>
+
+                <button class="button-post-toggle-more" type="button">
+                  Folytatom...
+                </button>
+
+                <div class="div-post-hidden-content">
+                  <p class="p-post-hidden-text">
+                    A filmes adaptációk mögött komoly döntések álltak: tempó, karakterfejlődés és drámai hatás. Ebben a
+                    cikkben végigvesszük a legfontosabb különbségeket, és azt is, miért voltak szükségesek ezek a
+                    módosítások. Lehet, hogy néhány kedvenc jeleneted teljesen más jelentést kap ezek után.
+                  </p>
+                </div>
+              </div>
+            </article>
+
+            <!-- Lapozás -->
+            <nav class="nav-pagination-wrap" aria-label="Oldalak közötti lapozás">
+              <ul class="ul-pagination-list">
+                <li>
+                  <a href="film.html" class="a-pagination-link is-current-page">1</a>
+                </li>
+                <li><a href="film2.html" class="a-pagination-link">2</a></li>
+                <li><a href="film3.html" class="a-pagination-link">3</a></li>
+
+                <li>
+                  <a href="film2.html" class="button-pagination-arrow" aria-label="Következő oldal">
+                    <span class="span-pagination-arrow-icon">›</span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <!-- Műsorújság -->
+
+        <section class="section-feature-slider-shell">
+          <div class="div-feature-slider-width">
+            <div class="div-feature-slider-frame">
+              <div class="div-feature-slider-window">
+                <div class="div-feature-slider-track" id="divFeatureSliderTrack">
+                  <article class="article-feature-slide-item">
+                    <div class="div-feature-slide-row">
+                      <div class="div-feature-image-col div-feature-image-col-right">
+                        <div class="div-feature-image-box">
+                          <img src="../../img/storyguide_tech_left_546x992.jpg" alt="Vuken - Off-Grid"
+                            class="img-feature-photo" />
+                        </div>
+                      </div>
+
+                      <div class="div-feature-image-col">
+                        <div class="div-feature-image-box">
+                          <img src="../../img/storyguide_tech_right_546x992.jpg" alt="Kis mobil ház"
+                            class="img-feature-photo" />
+                        </div>
+                      </div>
+
+                      <div class="div-feature-text-col">
+                        <div class="div-feature-text-box">
+                          <a href="../tech/tech.html" class="span-hero-card-tag span-hero-card-tag-tech">Tech</a>
+                          <h3 class="h3-feature-title">
+                            <a href="../tech/tech_1.html">A "Vuken - off-grid" majdnem teljes közmű a
+                              vadon mélyén</a>
+                          </h3>
+                          <p class="p-feature-desc">
+                            Ez az ominózus megjelenésű szerkezet
+                            megkönnyítheti az igazán privát tanya létrehozását
+                            a semmi közepén. A rendszer tartalmaz egy
+                            édesvíztartályt, egy víz-visszaforgató egységet és
+                            egy víznyomásfokozó szivattyút, valamint egy
+                            mosdót. Emellett helyet kap benne egy kompakt
+                            zuhanyzó melegvíz-csatlakozással, illetve egy
+                            konyhai rész mosogatóval, két főzőlappal és
+                            mikrohullámú sütővel.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+
+                  <article class="article-feature-slide-item">
+                    <div class="div-feature-slide-row">
+                      <div class="div-feature-image-col div-feature-image-col-right">
+                        <div class="div-feature-image-box">
+                          <img src="../../img/storyguide_music_left_546x992.jpg" alt="Harmónikás"
+                            class="img-feature-photo" />
+                        </div>
+                      </div>
+
+                      <div class="div-feature-image-col">
+                        <div class="div-feature-image-box">
+                          <img src="../../img/storyguide_music_right_546x992.jpg" alt="AI producer"
+                            class="img-feature-photo" />
+                        </div>
+                      </div>
+
+                      <div class="div-feature-text-col">
+                        <div class="div-feature-text-box">
+                          <a href="../zene/zene.html" class="span-hero-card-tag span-hero-card-tag-music">Zene</a>
+                          <h3 class="h3-feature-title">
+                            <a href="../zene/zene_1.html">AI Zeneszerző aki felbérel!</a>
+                          </h3>
+                          <p class="p-feature-desc">
+                            Kiderült miszerint hamarosan útjának indul az első
+                            AI zeneszerző, aki önállóan dolgozik és maga bérel
+                            fel emberi zenész munkaerőt az online térben,
+                            miközben saját algoritmusai segítségével elemzi a
+                            zenei trendeket, optimalizálja a produkciós
+                            folyamatokat, és teljes mértékben autonóm módon
+                            irányítja a kreatív döntéshozatalt a dalok
+                            megszületésétől egészen a kiadásig.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+
+                  <article class="article-feature-slide-item">
+                    <div class="div-feature-slide-row">
+                      <div class="div-feature-image-col div-feature-image-col-right">
+                        <div class="div-feature-image-box">
+                          <img src="../../img/storyguide_joke_left_546x992.jpg" alt="Adony Füzesabony térkép"
+                            class="img-feature-photo" />
+                        </div>
+                      </div>
+
+                      <div class="div-feature-image-col">
+                        <div class="div-feature-image-box">
+                          <img src="../../img/storyguide_joke_right_546x992.jpg" alt="Rock Band busz"
+                            class="img-feature-photo" />
+                        </div>
+                      </div>
+
+                      <div class="div-feature-text-col">
+                        <div class="div-feature-text-box">
+                          <a href="../humor/humor.html" class="span-hero-card-tag span-hero-card-tag-joke">Humor</a>
+                          <h3 class="h3-feature-title">
+                            <a href="../humor/humor_1.html">Abony vs Füzesabony: a zenekar, aki rossz
+                              városban keresett színpadot
+                            </a>
+                          </h3>
+                          <p class="p-feature-desc">
+                            A zenekar csak annyit tudott, hogy Abonyban
+                            játszanak pénteken. A dobos már a mikrobuszban
+                            rázta a fejét, hogy ez a turné olyan lesz, mint
+                            egy lemerült GPS memóriájában játszodó rémálom.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+
+                  <article class="article-feature-slide-item">
+                    <div class="div-feature-slide-row">
+                      <div class="div-feature-image-col div-feature-image-col-right">
+                        <div class="div-feature-image-box">
+                          <img src="../../img/storyguide_travel_left_546x992.jpg" alt="Naplementés táj bal oldal"
+                            class="img-feature-photo" />
+                        </div>
+                      </div>
+
+                      <div class="div-feature-image-col">
+                        <div class="div-feature-image-box">
+                          <img src="../../img/storyguide_travel_right_546x992.jpg" alt="Naplementés táj jobb oldal"
+                            class="img-feature-photo" />
+                        </div>
+                      </div>
+
+                      <div class="div-feature-text-col">
+                        <div class="div-feature-text-box">
+                          <a href="../utazas/utazas.html"
+                            class="span-hero-card-tag span-hero-card-tag-travel">Utazás</a>
+                          <h3 class="h3-feature-title">
+                            <a href="../utazas/utazas_1.html">Majd egy tucat lenyűgöző helyszín, itthon közel
+                              hozzád!
+                            </a>
+                          </h3>
+                          <p class="p-feature-desc">
+                            Hazánk természeti szépségei lenyűgöző
+                            változatosságot kínálnak: a nyugodt vizek, a
+                            végtelen síkságok és a zöldellő hegyek harmonikus
+                            egységet alkotnak. Ezek a tájak minden évszakban
+                            más arcukat mutatják, különleges hangulatukkal és
+                            csendes szépségükkel mély benyomást hagyva az
+                            emberben.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+
+                  <article class="article-feature-slide-item">
+                    <div class="div-feature-slide-row">
+                      <div class="div-feature-image-col div-feature-image-col-right">
+                        <div class="div-feature-image-box">
+                          <img src="../../img/storyguide_movie_left_546x992.jpg" alt="Mátrix kód"
+                            class="img-feature-photo" />
+                        </div>
+                      </div>
+
+                      <div class="div-feature-image-col">
+                        <div class="div-feature-image-box">
+                          <img src="../../img/storyguide_movie_right_546x992.jpg" alt="Ügynök viaszbábu"
+                            class="img-feature-photo" />
+                        </div>
+                      </div>
+
+                      <div class="div-feature-text-col">
+                        <div class="div-feature-text-box">
+                          <a href="../film/film.html" class="span-hero-card-tag span-hero-card-tag-movie">Film</a>
+                          <h3 class="h3-feature-title">
+                            <a href="../film/film_1.html">Mátrix: Új titkok 27 év után amiket még
+                              biztosan te sem vettél észre!</a>
+                          </h3>
+                          <p class="p-feature-desc">
+                            A Mátrix első huszonöt perce már elképesztő
+                            sűrűségben van tele elrejtett jelentésekkel:
+                            szimbólumokkal, filozófiai utalásokkal és finom
+                            előreutalásokkal — olyannyira, hogy sok film
+                            teljes játékideje alatt sem jut el idáig.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+
+                  <article class="article-feature-slide-item">
+                    <div class="div-feature-slide-row">
+                      <div class="div-feature-image-col div-feature-image-col-right">
+                        <div class="div-feature-image-box">
+                          <img src="../../img/storyguide_sport_left_546x992.jpg" alt="Úszó férfi"
+                            class="img-feature-photo" />
+                        </div>
+                      </div>
+
+                      <div class="div-feature-image-col">
+                        <div class="div-feature-image-box">
+                          <img src="../../img/storyguide_sport_right_546x992.jpg" alt="Kézilabdás lány"
+                            class="img-feature-photo" />
+                        </div>
+                      </div>
+
+                      <div class="div-feature-text-col">
+                        <div class="div-feature-text-box">
+                          <a href="../sport/sport.html" class="span-hero-card-tag span-hero-card-tag-sport">Sport</a>
+                          <h3 class="h3-feature-title">
+                            <a href="../sport/sport_1.html">Megrendezik a nyíltan doppingos versenyeket!
+                            </a>
+                          </h3>
+                          <p class="p-feature-desc">
+                            Az egyik legextrémebb kezdeményezés ami az
+                            Enhanced Games név alatt fut, kifejezetten azt a
+                            célt tűzte ki, hogy a sportolók szabadon
+                            használhassanak teljesítményfokozó szereket orvosi
+                            felügyelet mellett.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+              </div>
+
+              <div class="div-feature-side-dots" id="divFeatureSideDots">
+                <button class="button-feature-side-dot button-feature-side-dot-active" data-slide-index="0">
+                  <span>01</span>
+                </button>
+                <button class="button-feature-side-dot" data-slide-index="1">
+                  <span>02</span>
+                </button>
+                <button class="button-feature-side-dot" data-slide-index="2">
+                  <span>03</span>
+                </button>
+                <button class="button-feature-side-dot" data-slide-index="3">
+                  <span>04</span>
+                </button>
+                <button class="button-feature-side-dot" data-slide-index="4">
+                  <span>05</span>
+                </button>
+                <button class="button-feature-side-dot" data-slide-index="5">
+                  <span>06</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+  </div>
+
+  <!-- ========================
+         LÁBLÉC
+    ========================= -->
+
+  <footer class="footer-main-shell">
+    <div class="footer-content-width">
+      <!-- Felső Line Blokk -->
+
+      <div class="div-footer-top-grid">
+        <!-- Egy blokk -->
+        <div class="div-footer-col">
+          <h4 class="h4-footer-title">
+            <a href="../zene/zene.html">Zene</a>
+          </h4>
+        </div>
+
+        <div class="div-footer-col">
+          <h4 class="h4-footer-title">
+            <a href="../film/film.html">Film</a>
+          </h4>
+        </div>
+
+        <div class="div-footer-col">
+          <h4 class="h4-footer-title">
+            <a href="../sport/sport.html">Sport</a>
+          </h4>
+        </div>
+
+        <div class="div-footer-col">
+          <h4 class="h4-footer-title">
+            <a href="../utazas/utazas.html">Utazás</a>
+          </h4>
+        </div>
+
+        <div class="div-footer-col">
+          <h4 class="h4-footer-title">
+            <a href="../tech/tech.html">Tech</a>
+          </h4>
+        </div>
+
+        <div class="div-footer-col">
+          <h4 class="h4-footer-title">
+            <a href="../humor/humor.html">Humor</a>
+          </h4>
+        </div>
+      </div>
+
+      <!-- Logo -->
+
+      <div class="div-footer-middle-row">
+        <div class="div-footer-logo">
+          <a href="../../index.html">
+            <img src="../../img/w_logo.png" alt="Logo" />
+          </a>
+        </div>
+        <div class="div-footer-link">
+          <a href="../../adatkezelesi.html"> Adatkezelési Tájékoztató</a>
+        </div>
+        <div class="div-footer-link">
+          <a href="https://www.prooktatas.hu" target="_blank">Prooktatás</a>
+        </div>
+      </div>
+
+      <!-- Copyright -->
+
+      <div class="div-footer-bottom-row">
+        <div class="div-footer-copy-text">
+          Copyright © <span id="current-year"></span> <span>Sztorimix</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Felfelé mutató nyíl -->
+
+  <a id="scrollToTopBtn" class="link-floating-btn" href="#sitetop" aria-label="Kép gomb">
+    <img src="../../img/up_button_300x300.png" alt="Vissza a lap tetejére!">
+  </a>
+
+  <script src="../../js/scrolltopbutton.js"></script>
+  <script src="../../js/date.js"></script>
+  <script src="../../js/mobilemenu.js"></script>
+  <script src="../../js/currentyear.js"></script>
+  <script src="../../js/morecontent.js"></script>
+  <script src="../../js/storyguide.js"></script>
+</body>
+
+</html>

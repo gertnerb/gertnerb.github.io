@@ -1,0 +1,563 @@
+<!doctype html>
+<html lang="hu">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vuken-off-grid közmű a vadonban | Sztorimix | Gertner Balázs</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="../../ico/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="../../ico/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="../../ico/favicon-16x16.png" />
+  <link rel="manifest" href="../../ico/site.webmanifest" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+  <link rel="stylesheet" href="../../css/style.css" />
+</head>
+
+<body>
+  <div id="sitetop" class="div-global-shell">
+    <!-- ================================
+         FEJLÉC
+    ================================= -->
+    <header class="header-main-site">
+      <h1 class="div-hidden-heading">Vuken-off-grid</h1>
+
+      <!-- Aktuális dátum -->
+      <section>
+        <div class="div-top-info-wrap">
+          <div class="div-top-info-inner">
+            <div class="div-live-date-text" id="divLiveDateText">
+              Dátum betöltése...
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================================
+         MENÜ
+    ================================= -->
+
+      <!-- Fő menüsor -->
+      <div class="div-content-width">
+        <div class="div-header-main-row">
+          <!-- Logó -->
+          <div class="div-site-logo-box">
+            <a href="../../index.html" class="a-site-logo-link">
+              <img src="../../img/logo.png" alt="Site logo" class="img-site-logo" />
+            </a>
+          </div>
+
+          <!-- Desktop menü -->
+          <nav class="nav-desktop-menu">
+            <ul class="ul-desktop-menu-root">
+              <li class="li-desktop-menu-item">
+                <a href="../../index.html" class="a-desktop-menu-link"><span class="material-symbols-outlined">
+                    foundation </span>Kezdőlap</a>
+              </li>
+              <li class="li-desktop-menu-item">
+                <a class="a-desktop-menu-link a-desktop-menu-link-active"><span class="material-symbols-outlined">
+                    category </span>Cikkek</a>
+                <ul class="ul-desktop-submenu">
+                  <li class="li-desktop-menu-item">
+                    <a href="../zene/zene.html" class="a-desktop-submenu-link"><span class="material-symbols-outlined">
+                        music_note </span>Zene</a>
+                  </li>
+                  <li class="li-desktop-menu-item">
+                    <a href="../film/film.html" class="a-desktop-submenu-link"><span class="material-symbols-outlined">
+                        movie </span>Film</a>
+                  </li>
+                  <li class="li-desktop-menu-item">
+                    <a href="../sport/sport.html" class="a-desktop-submenu-link"><span
+                        class="material-symbols-outlined">
+                        sports_and_outdoors </span>Sport</a>
+                  </li>
+                  <li class="li-desktop-menu-item">
+                    <a href="../utazas/utazas.html" class="a-desktop-submenu-link"><span
+                        class="material-symbols-outlined">
+                        checked_bag </span>Utazás</a>
+                  </li>
+                  <li class="li-desktop-menu-item">
+                    <a href="../tech/tech.html" class="a-desktop-submenu-link"><span class="material-symbols-outlined">
+                        rocket </span>Tech</a>
+                  </li>
+                  <li class="li-desktop-menu-item">
+                    <a href="../humor/humor.html" class="a-desktop-submenu-link"><span
+                        class="material-symbols-outlined">
+                        comedy_mask </span>Humor</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="li-desktop-menu-item">
+                <a href="../../szerkesztok.html" class="a-desktop-menu-link"><span class="material-symbols-outlined">
+                    article_person </span>Szerkesztők</a>
+              </li>
+            </ul>
+          </nav>
+
+          <!-- Hamburger -->
+          <div class="div-header-action">
+            <button class="button-mobile-menu-toggle" id="buttonMobileMenuToggle" aria-label="Mobil menü megyitása">
+              <span class="span-mobile-menu-line"></span>
+              <span class="span-mobile-menu-line"></span>
+              <span class="span-mobile-menu-line"></span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mobil menü -->
+      <div class="div-mobile-menu-panel" id="divMobileMenuPanel">
+        <ul class="ul-mobile-menu-root">
+          <li class="li-mobile-menu-item">
+            <a href="../../index.html" class="a-mobile-menu-link"><span class="material-symbols-outlined"> foundation
+              </span>Kezdőlap</a>
+          </li>
+          <li class="li-mobile-menu-item">
+            <a href="../zene/zene.html" class="a-mobile-menu-link"><span class="material-symbols-outlined">
+                music_note </span>Zene</a>
+          </li>
+          <li class="li-mobile-menu-item">
+            <a href="../film/film.html" class="a-mobile-menu-link"><span class="material-symbols-outlined">
+                movie </span>Film</a>
+          </li>
+          <li class="li-mobile-menu-item">
+            <a href="../sport/sport.html" class="a-mobile-menu-link"><span class="material-symbols-outlined">
+                sports_and_outdoors </span>Sport</a>
+          </li>
+          <li class="li-mobile-menu-item">
+            <a href="../utazas/utazas.html" class="a-mobile-menu-link"><span class="material-symbols-outlined">
+                checked_bag </span>Utazás</a>
+          </li>
+          <li class="li-mobile-menu-item">
+            <a href="../tech/tech.html" class="a-mobile-menu-link"><span class="material-symbols-outlined">
+                rocket </span>Tech</a>
+          </li>
+          <li class="li-mobile-menu-item">
+            <a href="../humor/humor.html" class="a-mobile-menu-link"><span class="material-symbols-outlined">
+                comedy_mask </span>Humor</a>
+          </li>
+          <li class="li-mobile-menu-item">
+            <a href="../../szerkesztok.html" class="a-mobile-menu-link"><span class="material-symbols-outlined">
+                article_person </span>Szerkesztők</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <!-- ================================
+         FŐ TARTALOM
+    ================================= -->
+
+    <section class="section-story-shell">
+      <div class="div-story-container">
+        <div class="div-story-row">
+          <div class="div-story-col-full">
+            <article class="article-story-content">
+
+              <h2 class="h2-story-title div-feature-animate-title">
+                A „Vuken – off-grid” majdnem teljes közmű a vadon mélyén: futurisztikus luxus vagy a menekülő
+                életforma új szintje?
+              </h2>
+
+              <ul class="ul-post-meta-list">
+                <li>
+                  <img src="../../img/writer_viven_g_45x44.jpg" alt="Gerlics Vivien" class="img-meta-avatar" />
+                </li>
+                <li class="li-post-meta-item2">
+                  <span class="span-post-meta"></span>
+                  <a href="../../szerkesztok.html#gerlicsvivien" class="a-post-author-link">Gerlics Vivien</a>
+                </li>
+                <li class="li-post-meta-item2">
+                  <span class="span-dot-date2"></span>
+                  <span class="span-post-meta">2026.02.25.</span>
+                </li>
+                <li class="li-post-meta-item"> <a href="tech_1.html#komment"><span class="span-post-meta"></span>
+                    Kommentek (2)</a>
+                </li>
+              </ul>
+
+              <div class="div-story-hero div-feature-animate-image">
+                <img class="img-story-hero-image" src="../../img/story_tech_vuken_1536x1024.jpg"
+                  alt="Modern off-grid egység erdei környezetben" />
+                <a class="a-story-category-chip" href="tech.html">
+                  <span class="span-hero-card-tag span-hero-card-tag-tech">Tech</span>
+                </a>
+              </div>
+
+              <p class="p-story-copy">
+                Vannak eszközök, amelyek egyszerűen csak megoldanak egy problémát, és vannak olyanok, amelyek
+                egy egész életformáról kezdenek el új nyelven beszélni. A Vuken valahol ez utóbbi kategóriába
+                tartozik. Első pillantásra inkább tűnik egy minimalista, sötét tónusú design-objektnak, mint
+                valódi infrastruktúrának, mégis pont ez benne a legérdekesebb: nem ház akar lenni, hanem minden,
+                ami egy házból a legnehezebben kivitelezhető.
+              </p>
+
+              <p class="p-story-copy">
+                Az off-grid élet eddig leginkább kompromisszumokat jelentett. Áramhoz rendszer kellett, vízhez
+                külön megoldás, mosakodáshoz barkácsolás, internethez szerencse, a mindennapi kényelemhez pedig
+                sok tervezés és még több türelem. A Vuken ebbe a világba érkezik úgy, mintha valaki fogta
+                volna a teljes közműlogikát, és összecsomagolta volna egyetlen kompakt, telepíthető testbe. Nem
+                maga a kunyhó, nem maga a menedék, hanem a civilizáció sűrített háttérországa.
+              </p>
+
+              <h3 class="h3-story-heading">Nem kabin, hanem a kabin mögötti teljes háttérrendszer</h3>
+
+              <p class="p-story-copy">
+                Éppen ezért a Vukent nem érdemes a klasszikus tiny house-ok vagy hétvégi házak logikájával
+                nézni. Ez nem az a tárgy, amiben a nappali, a háló és a panoráma együtt lakik, hanem az a tárgy,
+                ami lehetővé teszi, hogy bármi más végre működőképes legyen mellette. Egy eldugott erdei épület,
+                egy kis menedékház, egy műterem, egy távoli telek vagy akár egy ideiglenes visszavonulóhely
+                egészen más értelmet kap, ha a közművesítés nem egy több hónapos, költséges és idegőrlő
+                történet.
+              </p>
+
+              <div class="div-story-float-block">
+                <figure class="figure-story-float-right">
+                  <img src="../../img/story_tech_vuken2_700x471.jpg"
+                    alt="Modern off-grid egység" />
+                  <figcaption>
+                    A koncepció legnagyobb ereje, hogy gyárilag összerendezett egészként érkezik.
+                  </figcaption>
+                </figure>
+
+                <p class="p-story-copy">
+                  A formája is ezt a gondolkodást erősíti. Nem próbál kedves vagy otthonos lenni a hagyományos
+                  értelemben, inkább magabiztosan funkcionális. Olyan, mint egy fekete, csendes
+                  infrastruktúra-szobor, amelynek minden oldala azt sugallja, hogy itt a megjelenés és a
+                  mérnöki logika tudatosan ugyanabba az irányba állt be.
+                </p>
+
+                <p class="p-story-copy">
+                  Ez a megközelítés különösen izgalmas most, amikor egyre többen keresik a városon túli, de
+                  nem teljesen kényelmetlen élet lehetőségét. Nem mindenki akar remeteként élni, sokan inkább
+                  csak kevesebb zajt, több távolságot és nagyobb szabadságot szeretnének. A Vuken pontosan
+                  ezt a vágyat fordítja le tárgyi nyelvre: ne mondj le mindenről, csak vidd magaddal azt, ami
+                  tényleg szükséges.
+                </p>
+
+                <p class="p-story-copy">
+                  És talán itt van az egész ötlet legerősebb mondata is. Nem azt mondja, hogy térj vissza a
+                  természetbe és szokj hozzá a nélkülözéshez. Inkább azt mondja: lépj ki a hálózatból, de a
+                  komfortot ne feltétlenül hagyd hátra.
+                </p>
+              </div>
+
+              <div class="div-story-split-grid">
+                  <img src="../../img/story_tech_vuken3_787x929.jpg" alt="Off-grid egység részei" />
+
+                <blockquote class="blockquote-story-quote2">
+                  „A legérdekesebb benne nem az, hogy van benne zuhany vagy áram, hanem az, hogy a vadon
+                  szélén hirtelen eltűnik az építkezési rémálom.”
+                </blockquote>
+              </div>
+
+              <div class="div-story-video-wrap">
+                <figure class="div-story-media-card">
+                  <div class="div-story-video-frame">
+                    <iframe src="https://www.youtube.com/embed/eHZH0z5DXFU" title="Off-grid víz- és közműrendszer videó"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                      allowfullscreen>
+                    </iframe>
+                  </div>
+                  <figcaption class="figcaption-story-caption2">
+                    <b>A videó egy teljesen másik egyénileg kialakított rendszert mutat be!</b>
+                  </figcaption>
+                </figure>
+              </div>
+
+
+
+              <p class="p-story-copy">
+                A gyakorlatban is jól mutatja, mennyire sokrétű kérdés az off-grid víz, energia és működés
+                összehangolása. A Vuken vonzereje éppen abból fakad, hogy ebből a kusza feladatcsomagból
+                próbál egyetlen átlátható, előre összerakott rendszert csinálni.
+              </p>
+
+              <div class="div-story-mosaic">
+                <div class="div-story-mosaic-main">
+                  <img src="../../img/story_tech_vuken4_1536x1024.jpg"
+                    alt="Vuken havas környezetben" />
+                </div>
+                <div class="div-story-mosaic-stack">
+                  <div class="div-story-mosaic-side">
+                    <img src="../../img/story_tech_vuken5_1024x1024.jpg"
+                      alt="Vuken fentről fényképezve" />
+                  </div>
+                  <div class="div-story-mosaic-side">
+                    <img src="../../img/story_tech_vuken6_1024x1024.jpg"
+                      alt="A Vuken egy szirten" />
+                  </div>
+                </div>
+              </div>
+
+              <h3 class="h3-story-heading">A vadon romantikája helyett működő hétköznapok</h3>
+
+              <p class="p-story-copy">
+                A legtöbb off-grid álomkép ott bukik meg, amikor a romantikából rutin lesz. Néhány látványos
+                fotó a havas fák között vagy a hegyoldal peremén még nem mond el semmit arról, milyen minden nap
+                vízzel, hulladékkal, árammal, higiéniával és alaphőmérséklettel foglalkozni. A Vuken
+                koncepciója pontosan erre reagál: nem a menekülés esztétikáját árulja, hanem a rendszeres
+                használhatóság ígéretét.
+              </p>
+
+              <p class="p-story-copy">
+                Ettől válik többé egy látványos építészeti ötletnél. Mert ha egy távoli helyen valóban lehet
+                zuhanyozni, főzni, tölteni, csatlakozni, fűteni vagy hűteni, akkor a hely már nem csak menedék
+                vagy kaland, hanem valós alternatíva lesz. Egy hosszú hétvége helyett akár hetekre is más
+                dimenziót kap a kintlét.
+              </p>
+
+
+              <p class="p-story-copy">
+                Pont ez az a határ, amit a klasszikus barkácsmegoldások gyakran nem tudnak kényelmesen átlépni.
+                Egy-egy napelem, hordozható akkumulátor vagy víztartály még nem jelent valódi infrastruktúrát. A
+                Vuken mögötti gondolat viszont az, hogy a szétszórt kompromisszumok helyett inkább egy
+                összehangolt egészet kapjon az ember.
+              </p>
+
+              <p class="p-story-copy">
+                Ez nyilván nem mindenkinek szól. Nem azoknak, akik a teljes önellátást saját kezű kísérletként
+                akarják felépíteni, és nem is azoknak, akik a vadont kizárólag puritán túlélésként képzelik el.
+                Inkább azoknak lehet izgalmas, akik a természetközeli létet nem szeretnék összekeverni a
+                folyamatos technikai küzdelemmel.
+              </p>
+
+              <p class="p-story-copy">
+                Vagyis nem a romantikus szenvedést teszi modernné, hanem a távolságot teszi élhetőbbé. És ez
+                elég erős különbség.
+              </p>
+
+
+              <div class="div-story-gallery-wrap">
+                <div class="div-story-gallery-grid">
+                  <div class="div-story-gallery-tile">
+                    <img src="../../img/story_tech_vuken7_580x580.jpg" alt="Tároló funkció" />
+                  </div>
+                  <div class="div-story-gallery-tile">
+                    <img src="../../img/story_tech_vuken8_580x580.jpg" alt="Minimalista beltér" />
+                  </div>
+                  <div class="div-story-gallery-tile">
+                    <img src="../../img/story_tech_vuken9_580x580.jpg" alt="Off-grid zuhanyzó" />
+                  </div>
+                </div>
+              </div>
+
+              <div class="div-story-float-block">
+                <figure class="figure-story-float-left">
+                  <img src="../../img/story_tech_vuken10_1536x1024.jpg" alt="Téli tájon egy kunyhó mellett" />
+                  <figcaption>
+                    A legjobb használati helyzet, amikor egy egyszerű kunyhó mellé kerül.
+                  </figcaption>
+                </figure>
+
+                <h3 class="h3-story-heading">A nagy kérdés: szabadság vagy nagyon drága kényelem?</h3>
+
+                <p class="p-story-copy">
+                  Persze az ilyen ötleteknél mindig megjelenik a kétkedés is. Sokak szemében ez nem más, mint
+                  egy rendkívül látványos, drága luxustárgy azoknak, akik szeretnék eljátszani, hogy kint
+                  vannak a világból, miközben valójában minden fontos funkciót magukkal visznek. Van ebben
+                  igazság, de talán nem ennyire egyszerű a kép.
+                </p>
+
+                <p class="p-story-copy">
+                  Mert a szabadság ma már nem mindig azt jelenti, hogy valaki mindentől megszabadul. Néha
+                  inkább azt, hogy szelektál: melyik zajt, melyik rendszert, melyik függőséget akarja tényleg
+                  elengedni, és melyik kényelmi elem az, amit megtartana. Ha valaki elvonulna a város
+                  ritmusából, de nem akarja minden reggel a nulláról megoldani a legalapvetőbb működést, annak
+                  ez a fajta köztes megoldás nagyon is logikus lehet.
+                </p>
+
+                <p class="p-story-copy">
+                  A Vuken ezért nem pusztán technikai tárgy, hanem állítás. Azt állítja, hogy az off-grid
+                  jövő nem biztos, hogy házilag összedrótozott kompromisszum lesz, hanem akár egy tudatosan
+                  tervezett, esztétikus és beköltözhető infrastruktúra is lehet. És bár elsőre talán túl
+                  futurisztikusnak tűnik, valójában pontosan arra a problémára válaszol, amelyet a legtöbb
+                  ember azonnal érez, amikor a vadon közepén szeretne komfortosan időt tölteni: jó a csend, jó
+                  a távolság, csak működjön minden.
+                </p>
+
+                <p class="p-story-copy">
+                  Akár futurisztikus luxusnak, akár okos infrastruktúrának nevezzük, a Vuken biztosan eltalál
+                  egy nagyon mai vágyat. Azt az elképzelést, hogy a természetközeli élet ne automatikusan
+                  lemondás, hanem tudatosan válogatott egyszerűség legyen. És ha ez a gondolat tényleg egyre több
+                  embert kezd el vonzani, akkor könnyen lehet, hogy a jövő menedékházai nem önmagukban lesznek
+                  érdekesek, hanem a mellettük álló, csendesen dolgozó közműmag miatt.
+                </p>
+
+              </div>
+
+              <!-- Szerző -->
+
+              <div class="div-story-author-card">
+                <img class="img-story-author-photo" src="../../img/writer_vivien_g_408x400.jpg" alt=Gerlics Vivien" />
+                <div>
+                  <span class="span-story-author-label">Szerző</span>
+                  <h4 class="h4-story-small-title">
+                    <a href="../../szerkesztok.html#gerlicsvivien">Gerlics Vivien</a>
+                  </h4>
+                  <p class="p-story-copy div-margin-b0">
+                    A technológia és informatika elkötelezett szakértője, aki folyamatosan követi a digitális világ
+                    legújabb trendjeit. Elemzéseiben a szoftverek, rendszerek és innovációk működését vizsgálja, különös
+                    figyelmet fordítva arra, hogyan alakítják a felhasználói élményt az új technológiák és online
+                    platformok. Leginkább azokat a megoldásokat keresi, amelyek hatékonyak, előremutatóak, és hosszú
+                    távon is értéket teremtenek.
+                  </p>
+                </div>
+              </div>
+
+              <div class="div-story-comments">
+                <h3 id="komment" class="h3-story-heading">Hozzászólások</h3>
+
+                <ol class="ol-story-comment-list" id="ol-story-comment-list">
+                  <li class="li-story-comment-item static-comment">
+                    <div class="div-story-comment-card">
+                      <img class="img-story-comment-avatar" src="https://picsum.photos/seed/commenter-11/96/96"
+                        alt="Kommentelő" />
+                      <div class="div-story-comment-head">
+                        <h5 class="h5-story-comment-name">
+                          Kertes Réka
+                        </h5>
+                        <span class="span-story-comment-date">2026. március 09. 11:07</span>
+                      </div>
+                      <div class="div-story-comment-text">
+                        Azért arra kíváncsi lennék hogyha ez a semmi közepén elromlik, akkor ki fogja azt záros időn belül megjavítani.
+                      </div>
+                    </div>
+                    <ul class="ul-story-comment-children">
+                      <li class="li-story-comment-item static-comment">
+                        <div class="div-story-comment-card">
+                          <img class="img-story-comment-avatar" src="https://picsum.photos/seed/commenter-43/96/96"
+                            alt="Kommentelő" />
+                          <div class="div-story-comment-head">
+                            <h5 class="h5-story-comment-name">
+                              Nagy Vince
+                            </h5>
+                            <span class="span-story-comment-date">2026. március 06. 13:11</span>
+                          </div>
+                          <div class="div-story-comment-text">
+                            Már tudom is hol üzemelném be a szerkezetet :)
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </li>
+                </ol>
+
+                <form class="form-story-reply-form" action="#" method="post" id="form-story-reply-form"
+                  data-story-id="vuken-off-grid">
+                  <input class="input-story-field" placeholder="Név" name="story_author_name"
+                    id="input-story-author-name" type="text" required maxlength="16" />
+                  <input class="input-story-field" placeholder="E-mail" name="story_author_email"
+                    id="input-story-author-email" type="email" required />
+                  <textarea class="textarea-story-field" name="story_comment_body" id="textarea-story-comment-body"
+                    placeholder="Írd meg a véleményed!" required maxlength="1500"></textarea>
+                  <button class="button-story-submit" type="submit" id="button-story-submit-main">Komment
+                    elküldése</button>
+                  <label class="label-consent">
+                  <input type="checkbox" name="adatkezeles" id="adatkezeles" required>
+                    A komment elküldésével elfogadom, hogy az általam megadott adatokat
+                    a weboldal üzemeltetője a kapcsolatfelvétel és ügyintézés céljából kezelje
+                    az <a href="../../adatkezelesi.html" target="_blank"><b><ins>Adatkezelési
+                          Tájékoztatóban</b></ins></a>
+                    foglaltak szerint.
+                  </label>
+                </form>
+
+                <ol id="ol-story-comment-list"></ol>
+
+                <div class="div-story-user-comment-list" id="div-story-user-comment-list"></div>
+              </div>
+
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================
+         LÁBLÉC
+    ========================= -->
+
+    <footer class="footer-main-shell">
+      <div class="footer-content-width">
+        <!-- Felső Line Blokk -->
+
+        <div class="div-footer-top-grid">
+          <!-- Egy blokk -->
+          <div class="div-footer-col">
+            <h4 class="h4-footer-title">
+              <a href="../zene/zene.html">Zene</a>
+            </h4>
+          </div>
+
+          <div class="div-footer-col">
+            <h4 class="h4-footer-title">
+              <a href="../film/film.html">Film</a>
+            </h4>
+          </div>
+
+          <div class="div-footer-col">
+            <h4 class="h4-footer-title">
+              <a href="../sport/sport.html">Sport</a>
+            </h4>
+          </div>
+
+          <div class="div-footer-col">
+            <h4 class="h4-footer-title">
+              <a href="../utazas/utazas.html">Utazás</a>
+            </h4>
+          </div>
+
+          <div class="div-footer-col">
+            <h4 class="h4-footer-title">
+              <a href="../tech/tech.html">Tech</a>
+            </h4>
+          </div>
+
+          <div class="div-footer-col">
+            <h4 class="h4-footer-title">
+              <a href="../humor/humor.html">Humor</a>
+            </h4>
+          </div>
+        </div>
+
+        <!-- Logo -->
+
+        <div class="div-footer-middle-row">
+          <div class="div-footer-logo">
+            <a href="../../index.html">
+              <img src="../../img/w_logo.png" alt="Logo" />
+            </a>
+          </div>
+          <div class="div-footer-link">
+            <a href="../../adatkezelesi.html"> Adatkezelési Tájékoztató</a>
+          </div>
+          <div class="div-footer-link">
+            <a href="https://www.prooktatas.hu" target="_blank">Prooktatás</a>
+          </div>
+        </div>
+
+        <!-- Copyright -->
+
+        <div class="div-footer-bottom-row">
+          <div class="div-footer-copy-text">
+            Copyright © <span id="current-year"></span> <span>Sztorimix</span>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Felfelé mutató nyíl -->
+
+    <a id="scrollToTopBtn" class="link-floating-btn" href="#sitetop" aria-label="Kép gomb">
+      <img src="../../img/up_button_300x300.png" alt="Vissza a lap tetejére!">
+    </a>
+
+    <script src="../../js/scrolltopbutton.js"></script>
+    <script src="../../js/date.js"></script>
+    <script src="../../js/mobilemenu.js"></script>
+    <script src="../../js/currentyear.js"></script>
+    <script src="../../js/post2.js"></script>
+</body>
+
+</html>

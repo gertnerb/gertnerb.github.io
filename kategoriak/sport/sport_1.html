@@ -1,0 +1,485 @@
+<!doctype html>
+<html lang="hu">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nyíltan doppingos versenyek | Sztorimix | Gertner Balázs</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="../../ico/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="../../ico/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="../../ico/favicon-16x16.png" />
+  <link rel="manifest" href="../../ico/site.webmanifest" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+  <link rel="stylesheet" href="../../css/style.css" />
+</head>
+
+<body>
+  <div id="sitetop" class="div-global-shell">
+    <!-- ================================
+         FEJLÉC
+    ================================= -->
+    <header class="header-main-site">
+      <h1 class="div-hidden-heading">Nyíltan doppingos versenyek</h1>
+
+      <!-- Aktuális dátum -->
+      <section>
+        <div class="div-top-info-wrap">
+          <div class="div-top-info-inner">
+            <div class="div-live-date-text" id="divLiveDateText">
+              Dátum betöltése...
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================================
+         MENÜ
+    ================================= -->
+
+      <!-- Fő menüsor -->
+      <div class="div-content-width">
+        <div class="div-header-main-row">
+          <!-- Logó -->
+          <div class="div-site-logo-box">
+            <a href="../../index.html" class="a-site-logo-link">
+              <img src="../../img/logo.png" alt="Site logo" class="img-site-logo" />
+            </a>
+          </div>
+
+          <!-- Desktop menü -->
+          <nav class="nav-desktop-menu">
+            <ul class="ul-desktop-menu-root">
+              <li class="li-desktop-menu-item">
+                <a href="../../index.html" class="a-desktop-menu-link"><span class="material-symbols-outlined">
+                    foundation </span>Kezdőlap</a>
+              </li>
+              <li class="li-desktop-menu-item">
+                <a class="a-desktop-menu-link a-desktop-menu-link-active"><span class="material-symbols-outlined">
+                    category </span>Cikkek</a>
+                <ul class="ul-desktop-submenu">
+                  <li class="li-desktop-menu-item">
+                    <a href="../zene/zene.html" class="a-desktop-submenu-link"><span class="material-symbols-outlined">
+                        music_note </span>Zene</a>
+                  </li>
+                  <li class="li-desktop-menu-item">
+                    <a href="../film/film.html" class="a-desktop-submenu-link"><span class="material-symbols-outlined">
+                        movie </span>Film</a>
+                  </li>
+                  <li class="li-desktop-menu-item">
+                    <a href="../sport/sport.html" class="a-desktop-submenu-link"><span
+                        class="material-symbols-outlined">
+                        sports_and_outdoors </span>Sport</a>
+                  </li>
+                  <li class="li-desktop-menu-item">
+                    <a href="../utazas/utazas.html" class="a-desktop-submenu-link"><span
+                        class="material-symbols-outlined">
+                        checked_bag </span>Utazás</a>
+                  </li>
+                  <li class="li-desktop-menu-item">
+                    <a href="../tech/tech.html" class="a-desktop-submenu-link"><span class="material-symbols-outlined">
+                        rocket </span>Tech</a>
+                  </li>
+                  <li class="li-desktop-menu-item">
+                    <a href="../humor/humor.html" class="a-desktop-submenu-link"><span
+                        class="material-symbols-outlined">
+                        comedy_mask </span>Humor</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="li-desktop-menu-item">
+                <a href="../../szerkesztok.html" class="a-desktop-menu-link"><span class="material-symbols-outlined">
+                    article_person </span>Szerkesztők</a>
+              </li>
+            </ul>
+          </nav>
+
+          <!-- Hamburger -->
+          <div class="div-header-action">
+            <button class="button-mobile-menu-toggle" id="buttonMobileMenuToggle" aria-label="Mobil menü megyitása">
+              <span class="span-mobile-menu-line"></span>
+              <span class="span-mobile-menu-line"></span>
+              <span class="span-mobile-menu-line"></span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mobil menü -->
+      <div class="div-mobile-menu-panel" id="divMobileMenuPanel">
+        <ul class="ul-mobile-menu-root">
+          <li class="li-mobile-menu-item">
+            <a href="../../index.html" class="a-mobile-menu-link"><span class="material-symbols-outlined"> foundation
+              </span>Kezdőlap</a>
+          </li>
+          <li class="li-mobile-menu-item">
+            <a href="../zene/zene.html" class="a-mobile-menu-link"><span class="material-symbols-outlined">
+                music_note </span>Zene</a>
+          </li>
+          <li class="li-mobile-menu-item">
+            <a href="../film/film.html" class="a-mobile-menu-link"><span class="material-symbols-outlined">
+                movie </span>Film</a>
+          </li>
+          <li class="li-mobile-menu-item">
+            <a href="../sport/sport.html" class="a-mobile-menu-link"><span class="material-symbols-outlined">
+                sports_and_outdoors </span>Sport</a>
+          </li>
+          <li class="li-mobile-menu-item">
+            <a href="../utazas/utazas.html" class="a-mobile-menu-link"><span class="material-symbols-outlined">
+                checked_bag </span>Utazás</a>
+          </li>
+          <li class="li-mobile-menu-item">
+            <a href="../tech/tech.html" class="a-mobile-menu-link"><span class="material-symbols-outlined">
+                rocket </span>Tech</a>
+          </li>
+          <li class="li-mobile-menu-item">
+            <a href="../humor/humor.html" class="a-mobile-menu-link"><span class="material-symbols-outlined">
+                comedy_mask </span>Humor</a>
+          </li>
+          <li class="li-mobile-menu-item">
+            <a href="../../szerkesztok.html" class="a-mobile-menu-link"><span class="material-symbols-outlined">
+                article_person </span>Szerkesztők</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <!-- ================================
+         FŐ TARTALOM
+    ================================= -->
+
+    <section class="section-story-shell">
+      <div class="div-story-container">
+        <div class="div-story-row">
+          <div class="div-story-col-full">
+            <article class="article-story-content">
+
+              <h2 class="h2-story-title div-feature-animate-title">
+                Megrendezik a nyíltan doppingos versenyeket! Új korszak kezdődik, vagy a sport utolsó nagy botránya jön?
+              </h2>
+
+              <ul class="ul-post-meta-list">
+                <li>
+                  <img src="../../img/writer_zoltan_k_45x44.jpg" alt="Kiss Zoltán" class="img-meta-avatar" />
+                </li>
+                <li class="li-post-meta-item2">
+                  <a href="../../szerkesztok.html#kisszoltan" class="a-post-author-link">Kiss Zoltán</a>
+                </li>
+                <li class="li-post-meta-item2">
+                  <span class="span-post-meta">2026.04.03.</span>
+                </li>
+                <li class="li-post-meta-item"> <a href="sport_1.html#komment"><span class="span-post-meta"></span>
+                    Kommentek (0)</a>
+                </li>
+              </ul>
+
+              <div class="div-story-hero div-feature-animate-image">
+                <img class="img-story-hero-image" src="../../img/story_sport_stadion_1400x933.jpg" alt="Stadion" />
+                <a class="a-story-category-chip" href="sport.html">
+                  <span class="span-hero-card-tag span-hero-card-tag-sport">Sport</span>
+                </a>
+              </div>
+
+              <p class="p-story-copy">
+                Sokáig csak provokatív ötletnek, internetes túlzásnak vagy cinikus sportipari poénnak tűnt, most azonban
+                egyre komolyabban beszélnek róla: megrendezhetik az első olyan sportversenyeket, ahol a
+                teljesítményfokozó szerek használata nem rejtett szabályszegés, hanem nyíltan vállalt része a
+                rendszernek. Vagyis megszülethet az a mezőny, ahol nem a lebukás kockázata a kérdés, hanem az, ki
+                mennyire képes kitolni az emberi test határait.
+              </p>
+
+              <p class="p-story-copy">
+                Az ötlet egyszerre sokkoló és logikus. Sokan régóta állítják, hogy az élsport már most is a biológia, az
+                orvostudomány, a technológia és a pénz találkozási pontján működik, csak mindezt hivatalosan a „tiszta
+                verseny” nyelvén csomagolja be. Egy nyíltan doppingos versenyrendszer ezt a képmutatást söpörné le az
+                asztalról — legalábbis támogatói szerint.
+              </p>
+
+              <h3 class="h3-story-heading">A szabályszegésből új szabályrendszer lehet</h3>
+
+              <p class="p-story-copy">
+                A hagyományos sportvilág évtizedeken át úgy épült fel, hogy a tiltott szerek használata egyszerre
+                számított erkölcsi vétségnek, sportszakmai csalásnak és egészségügyi kockázatnak. Most azonban egy
+                újfajta gondolkodás próbál helyet kérni: mi történik, ha valaki nem elrejteni akarja a
+                teljesítményfokozást, hanem beépíteni egy külön ligába, külön szabályokkal, külön orvosi felügyelettel
+                és teljesen nyílt kommunikációval?
+              </p>
+
+              <p class="p-story-copy">
+                A támogatók szerint ez a modell legalább őszinte lenne. Nem lenne szükség hosszú utólagos vizsgálatokra,
+                évekkel később elvett érmekre, titkos kezelésekre vagy végtelen botrányokra. A néző pontosan tudná, mit
+                lát, a sportoló pedig pontosan tudná, milyen rendszerbe lép be. A kritikusok szerint viszont épp ez a
+                legijesztőbb benne: ami eddig kivételnek és botránynak számított, abból hirtelen legitim látványosság
+                lenne.
+              </p>
+
+              <div class="div-story-panel">
+                <h4 id="ul-vita" class="h4-story-small-title">Miért váltott ki ekkora vitát az ötlet?</h4>
+                <ul class="ul-story-list">
+                  <li>Mert a sport egyik legfontosabb alapelvét, az egyenlő feltételekbe vetett hitet támadja meg.</li>
+                  <li>Mert sokak szerint a nyíltság nem oldja fel az egészségügyi kockázatokat, csak láthatóbbá teszi
+                    őket.</li>
+                  <li>Mert a pénz és a rekordhajszolás még erősebben nyomhatná bele a sportolókat a veszélyes
+                    döntésekbe.</li>
+                  <li>Mert teljesen új kérdést vet fel arról, hogy valójában mit ünneplünk a sportban: az embert vagy a
+                    határait módosító rendszert.</li>
+                </ul>
+              </div>
+
+              <div class="div-story-mosaic">
+                <div class="div-story-mosaic-main">
+                  <img src="../../img/story_sport_warmingup_900x598.jpg" alt="Sportoló edzés közben" />
+                </div>
+                <div class="div-story-mosaic-stack">
+                  <div class="div-story-mosaic-side">
+                    <img src="../../img/story_sport_swimmer_900x598.jpg" alt="Egy úszó férfi"
+                      alt="Stopperóra és atlétikai rajtkő" />
+                  </div>
+                  <div class="div-story-mosaic-side">
+                    <img src="../../img/story_sport_fighters_900x558.jpg" alt="Küzdő harcosok" />
+                  </div>
+                </div>
+              </div>
+
+              <h3 class="h3-story-heading">A rekordok biztosan jönnének, de milyen áron?</h3>
+
+              <p class="p-story-copy">
+                Az ilyen versenyek egyik legerősebb marketingígérete nyilvánvaló: gyorsabb idők, nagyobb erő,
+                látványosabb teljesítmények, megdöntött csúcsok. Egy olyan korszakban, ahol minden figyelemért
+                versenyez, a „minden eddiginél extrémebb” sportesemények könnyen magukhoz vonzhatják a közönséget. A
+                kérdés csak az, hogy a néző valóban kíváncsi-e erre, vagy csupán a botrány ereje húzná fel átmenetileg
+                az érdeklődést.
+              </p>
+
+              <p class="p-story-copy">
+                Mert a rekord önmagában nem minden. A sport ereje sokszor nem is pusztán az eredményben rejlik, hanem
+                abban a hitben, hogy az emberi teljesítmény mögött fegyelem, tehetség, munka és mentális állóképesség
+                áll. Ha ezt az élményt túlhangsúlyozott laborháttér váltja fel, akkor könnyen előfordulhat, hogy a
+                csodálat helyét a kíváncsisággal kevert távolságtartás veszi át.
+              </p>
+
+              <div class="div-story-block-group">
+                <div class="div-story-row">
+                  <div class="div-story-col-third">
+                    <div class="div-story-inline-slider">
+                      <div class="div-story-inline-slider-track">
+                        <div class="div-story-inline-slide">
+                          <img src="../../img/story_sport_pingpong_502x1536.jpg" alt="Ping-Pong játékos" />
+                        </div>
+                        <div class="div-story-inline-slide">
+                          <img src="../../img/story_sport_tennisplayer_505x1536.jpg" alt="Tenisz játékos" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="div-story-col-two-third">
+                    <p class="p-story-copy">
+                      A támogatók ugyanakkor azt mondják, hogy az élsport így is rég messze jár a romantikus
+                      amatőreszménytől. Speciális étrendek, magassági edzőtáborok, alvásoptimalizálás, teljes
+                      biometrikus monitorozás, személyre szabott regenerációs programok és csúcstechnológiás
+                      felszerelések már most is jelentősen torzítják a „természetes” verseny fogalmát. Szerintük a
+                      nyíltan doppingos liga csak kimondaná azt, amit sokan eddig is sejtettek: a teljesítményfokozás
+                      valamilyen formában már rég a rendszer része.
+                    </p>
+
+                    <p class="p-story-copy">
+                      Ez az érvelés azonban nem győz meg mindenkit. A különbség nemcsak jogi vagy kommunikációs, hanem
+                      morális és orvosi is. Egy fejlettebb cipő vagy precízebb regenerációs terv nem ugyanaz, mint olyan
+                      szerek használata, amelyek közvetlenül beavatkoznak a hormonrendszerbe, a vérképbe vagy a
+                      szervezet terhelhetőségébe.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="div-story-gallery-wrap">
+                <div class="div-story-gallery-grid">
+                  <div class="div-story-gallery-tile">
+                    <img src="../../img/story_sport_drugs_1544x1522.jpg" alt="Teljesítmény növelő szerek" />
+                  </div>
+                  <div class="div-story-gallery-tile">
+                    <img src="../../img/story_sport_balls_800x800.jpg" alt="Különböző méretű labdák" />
+                  </div>
+                  <div class="div-story-gallery-tile">
+                    <img src="../../img/story_sport_sportmedicine_1544x1522.jpg" alt="Sport gyógyász kezelés" />
+                  </div>
+                </div>
+              </div>
+
+              <h3 class="h3-story-heading">A legnagyobb kérdés mégsem a nézőké, hanem a sportolóké</h3>
+
+              <p class="p-story-copy">
+                Bármennyire látványos is a vita a közvélemény szemszögéből, a legfontosabb dimenzió mégis az, hogy
+                milyen nyomás nehezedne a sportolókra. Ha egy új liga pénzt, figyelmet, szponzorációt és hírnevet ígér,
+                akkor sokan olyan döntési helyzetbe kerülhetnek, ahol az egészség, a karrier és a rövid távú siker
+                közötti választás már nem valódi szabadságként, hanem kényszerként jelenik meg.
+              </p>
+
+              <p class="p-story-copy">
+                És éppen itt húzódik a legélesebb határ: lehet ugyan azt mondani, hogy mindenki önként vállalja a
+                részvételt, de a profi sport világában az önkéntesség sokszor együtt mozog a kiszolgáltatottsággal. Egy
+                sérülésből visszatérő sportoló, egy lecsúszóban lévő versenyző vagy egy áttörésre váró fiatal atléta
+                egészen másképp érzékeli a „szabad döntés” lehetőségét, mint ahogy azt kívülről elképzeljük.
+              </p>
+
+              <p class="p-story-copy">
+                Akár megvalósulnak ezek a versenyek, akár nem, az biztos, hogy az ötlet már most kényelmetlen
+                pontossággal mutat rá a sportvilág ellentmondásaira. Mert miközben sokan felháborodnak a nyíltan
+                doppingos formátumon, valójában ugyanaz a rendszer nézi őrült figyelemmel a gyorsabb időket, a nagyobb
+                ugrásokat, az extrémebb teljesítményeket és a folyamatos rekorddöntéseket.
+              </p>
+
+              <p class="p-story-copy">
+                A kérdés tehát talán nem is az, hogy akarunk-e ilyen versenyeket. Inkább az, hogy mennyire vagyunk
+                őszinték abban, amit a sportról gondolunk. Ha a teljesítmény mindenek felett áll, előbb-utóbb valaki
+                mindig megpróbálja majd kitolni a határt. Most úgy tűnik, ez a kísérlet már nem a háttérben, hanem a
+                reflektorfényben történne meg.
+              </p>
+
+              <!-- Szerző -->
+
+              <div class="div-story-author-card">
+                <img class="img-story-author-photo" src="../../img/writer_zoltan_k_408x400.jpg" alt=Kiss Zoltán" />
+                <div>
+                  <span class="span-story-author-label">Szerző</span>
+                  <h4 class="h4-story-small-title">
+                    <a href="../../szerkesztok.html#kisszoltan">Kiss Zoltán</a>
+                  </h4>
+                  <p class="p-story-copy div-margin-b0">
+                    A modern életmód és egészségtudatosság elkötelezett képviselője, aki egyszerre sport szakember és
+                    szenvedélyes szakács. Munkájában az edzés, a táplálkozás és a gasztronómiai élmény összhangját
+                    vizsgálja, miközben figyelemmel kíséri, hogyan formálják az új trendek és alapanyagok az emberek
+                    étkezési szokásait és teljesítményét. Leginkább azokat a megoldásokat keresi, amelyek nemcsak
+                    hatékonyak, hanem élvezetesek is, és hosszú távon hozzájárulnak a testi-lelki egyensúlyhoz.
+                  </p>
+                </div>
+              </div>
+
+              <div class="div-story-comments">
+                <h3 id="komment" class="h3-story-heading">Hozzászólások</h3>
+
+
+                <ol class="ol-story-comment-list" id="ol-story-comment-list">
+
+                </ol>
+
+                <form class="form-story-reply-form" action="#" method="post" id="form-story-reply-form"
+                  data-story-id="nyiltan-dopping">
+                  <input class="input-story-field" placeholder="Név" name="story_author_name"
+                    id="input-story-author-name" type="text" required maxlength="16" />
+                  <input class="input-story-field" placeholder="E-mail" name="story_author_email"
+                    id="input-story-author-email" type="email" required />
+                  <textarea class="textarea-story-field" name="story_comment_body" id="textarea-story-comment-body"
+                    placeholder="Írd meg a véleményed!" required maxlength="1500"></textarea>
+                  <button class="button-story-submit" type="submit" id="button-story-submit-main">Komment
+                    elküldése</button>
+                  <label class="label-consent">
+                    <input type="checkbox" name="adatkezeles" id="adatkezeles" required>
+                    A komment elküldésével elfogadom, hogy az általam megadott adatokat
+                    a weboldal üzemeltetője a kapcsolatfelvétel és ügyintézés céljából kezelje
+                    az <a href="../../adatkezelesi.html" target="_blank"><b><ins>Adatkezelési
+                          Tájékoztatóban</b></ins></a>
+                    foglaltak szerint.
+                  </label>
+                </form>
+
+                <ol id="ol-story-comment-list"></ol>
+
+                <div class="div-story-user-comment-list" id="div-story-user-comment-list"></div>
+              </div>
+
+            </article>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================
+         LÁBLÉC
+    ========================= -->
+
+    <footer class="footer-main-shell">
+      <div class="footer-content-width">
+        <!-- Felső Line Blokk -->
+
+        <div class="div-footer-top-grid">
+          <!-- Egy blokk -->
+          <div class="div-footer-col">
+            <h4 class="h4-footer-title">
+              <a href="../zene/zene.html">Zene</a>
+            </h4>
+          </div>
+
+          <div class="div-footer-col">
+            <h4 class="h4-footer-title">
+              <a href="../film/film.html">Film</a>
+            </h4>
+          </div>
+
+          <div class="div-footer-col">
+            <h4 class="h4-footer-title">
+              <a href="../sport/sport.html">Sport</a>
+            </h4>
+          </div>
+
+          <div class="div-footer-col">
+            <h4 class="h4-footer-title">
+              <a href="../utazas/utazas.html">Utazás</a>
+            </h4>
+          </div>
+
+          <div class="div-footer-col">
+            <h4 class="h4-footer-title">
+              <a href="../tech/tech.html">Tech</a>
+            </h4>
+          </div>
+
+          <div class="div-footer-col">
+            <h4 class="h4-footer-title">
+              <a href="../humor/humor.html">Humor</a>
+            </h4>
+          </div>
+        </div>
+
+        <!-- Logo -->
+
+        <div class="div-footer-middle-row">
+          <div class="div-footer-logo">
+            <a href="../../index.html">
+              <img src="../../img/w_logo.png" alt="Logo" />
+            </a>
+          </div>
+          <div class="div-footer-link">
+            <a href="../../adatkezelesi.html"> Adatkezelési Tájékoztató</a>
+          </div>
+          <div class="div-footer-link">
+            <a href="https://www.prooktatas.hu" target="_blank">Prooktatás</a>
+          </div>
+        </div>
+
+        <!-- Copyright -->
+
+        <div class="div-footer-bottom-row">
+          <div class="div-footer-copy-text">
+            Copyright © <span id="current-year"></span> <span>Sztorimix</span>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Felfelé mutató nyíl -->
+
+    <a id="scrollToTopBtn" class="link-floating-btn" href="#sitetop" aria-label="Kép gomb">
+      <img src="../../img/up_button_300x300.png" alt="Vissza a lap tetejére!">
+    </a>
+
+    <script src="../../js/scrolltopbutton.js"></script>
+    <script src="../../js/date.js"></script>
+    <script src="../../js/mobilemenu.js"></script>
+    <script src="../../js/currentyear.js"></script>
+    <script src="../../js/post2.js"></script>
+</body>
+
+</html>

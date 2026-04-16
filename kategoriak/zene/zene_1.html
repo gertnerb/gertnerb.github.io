@@ -1,0 +1,456 @@
+<!doctype html>
+<html lang="hu">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Producer | Sztorimix | Gertner Balázs</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="../../ico/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="../../ico/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="../../ico/favicon-16x16.png" />
+  <link rel="manifest" href="../../ico/site.webmanifest" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+  <link rel="stylesheet" href="../../css/style.css" />
+</head>
+
+<body>
+  <div id="sitetop" class="div-global-shell">
+    <!-- ================================
+         FEJLÉC
+    ================================= -->
+    <header class="header-main-site">
+      <h1 class="div-hidden-heading">Weboldal Header</h1>
+
+      <!-- Aktuális dátum -->
+      <section>
+        <div class="div-top-info-wrap">
+          <div class="div-top-info-inner">
+            <div class="div-live-date-text" id="divLiveDateText">
+              Dátum betöltése...
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================================
+         MENÜ
+    ================================= -->
+
+      <!-- Fő menüsor -->
+      <div class="div-content-width">
+        <div class="div-header-main-row">
+          <!-- Logó -->
+          <div class="div-site-logo-box">
+            <a href="../../index.html" class="a-site-logo-link">
+              <img src="../../img/logo.png" alt="Site logo" class="img-site-logo" />
+            </a>
+          </div>
+
+          <!-- Desktop menü -->
+          <nav class="nav-desktop-menu">
+            <ul class="ul-desktop-menu-root">
+              <li class="li-desktop-menu-item">
+                <a href="../../index.html" class="a-desktop-menu-link"><span class="material-symbols-outlined">
+                    foundation </span>Kezdőlap</a>
+              </li>
+              <li class="li-desktop-menu-item">
+                <a class="a-desktop-menu-link a-desktop-menu-link-active"><span class="material-symbols-outlined">
+                    category </span>Cikkek</a>
+                <ul class="ul-desktop-submenu">
+                  <li class="li-desktop-menu-item">
+                    <a href="../zene/zene.html" class="a-desktop-submenu-link"><span class="material-symbols-outlined">
+                        music_note </span>Zene</a>
+                  </li>
+                  <li class="li-desktop-menu-item">
+                    <a href="../film/film.html" class="a-desktop-submenu-link"><span class="material-symbols-outlined">
+                        movie </span>Film</a>
+                  </li>
+                  <li class="li-desktop-menu-item">
+                    <a href="../sport/sport.html" class="a-desktop-submenu-link"><span
+                        class="material-symbols-outlined">
+                        sports_and_outdoors </span>Sport</a>
+                  </li>
+                  <li class="li-desktop-menu-item">
+                    <a href="../utazas/utazas.html" class="a-desktop-submenu-link"><span
+                        class="material-symbols-outlined">
+                        checked_bag </span>Utazás</a>
+                  </li>
+                  <li class="li-desktop-menu-item">
+                    <a href="../tech/tech.html" class="a-desktop-submenu-link"><span class="material-symbols-outlined">
+                        rocket </span>Tech</a>
+                  </li>
+                  <li class="li-desktop-menu-item">
+                    <a href="../humor/humor.html" class="a-desktop-submenu-link"><span
+                        class="material-symbols-outlined">
+                        comedy_mask </span>Humor</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="li-desktop-menu-item">
+                <a href="../../szerkesztok.html" class="a-desktop-menu-link"><span class="material-symbols-outlined">
+                    article_person </span>Szerkesztők</a>
+              </li>
+            </ul>
+          </nav>
+
+          <!-- Hamburger -->
+          <div class="div-header-action">
+            <button class="button-mobile-menu-toggle" id="buttonMobileMenuToggle" aria-label="Mobil menü megyitása">
+              <span class="span-mobile-menu-line"></span>
+              <span class="span-mobile-menu-line"></span>
+              <span class="span-mobile-menu-line"></span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mobil menü -->
+      <div class="div-mobile-menu-panel" id="divMobileMenuPanel">
+        <ul class="ul-mobile-menu-root">
+          <li class="li-mobile-menu-item">
+            <a href="../../index.html" class="a-mobile-menu-link"><span class="material-symbols-outlined"> foundation
+              </span>Kezdőlap</a>
+          </li>
+          <li class="li-mobile-menu-item">
+            <a href="../zene/zene.html" class="a-mobile-menu-link"><span class="material-symbols-outlined">
+                music_note </span>Zene</a>
+          </li>
+          <li class="li-mobile-menu-item">
+            <a href="../film/film.html" class="a-mobile-menu-link"><span class="material-symbols-outlined">
+                movie </span>Film</a>
+          </li>
+          <li class="li-mobile-menu-item">
+            <a href="../sport/sport.html" class="a-mobile-menu-link"><span class="material-symbols-outlined">
+                sports_and_outdoors </span>Sport</a>
+          </li>
+          <li class="li-mobile-menu-item">
+            <a href="../utazas/utazas.html" class="a-mobile-menu-link"><span class="material-symbols-outlined">
+                checked_bag </span>Utazás</a>
+          </li>
+          <li class="li-mobile-menu-item">
+            <a href="../tech/tech.html" class="a-mobile-menu-link"><span class="material-symbols-outlined">
+                rocket </span>Tech</a>
+          </li>
+          <li class="li-mobile-menu-item">
+            <a href="../humor/humor.html" class="a-mobile-menu-link"><span class="material-symbols-outlined">
+                comedy_mask </span>Humor</a>
+          </li>
+          <li class="li-mobile-menu-item">
+            <a href="../../szerkesztok.html" class="a-mobile-menu-link"><span class="material-symbols-outlined">
+                article_person </span>Szerkesztők</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <!-- ================================
+         FŐ TARTALOM
+    ================================= -->
+
+    <section class="section-story-shell">
+      <div class="div-story-container">
+
+        <h2 class="h2-story-title div-feature-animate-title">
+          AI zeneszerző, aki felbérel: forradalom a zeneiparban?
+        </h2>
+
+        <ul class="ul-post-meta-list">
+          <li>
+            <img src="../../img/writer_janos_s_45x44.jpg" alt="Saunders János" class="img-meta-avatar" />
+          </li>
+          <li class="li-post-meta-item2">
+            <span class="span-post-meta"></span>
+            <a href="../../szerkesztok.html#saundersjanos" class="a-post-author-link">Saunders János</a>
+          </li>
+          <li class="li-post-meta-item2">
+            <span class="span-dot-date2"></span>
+            <span class="span-post-meta">2026.03.06.</span>
+          </li>
+          <li class="li-post-meta-item"> <a href="zene_1.html#komment"><span class="span-post-meta"></span>
+              Kommentek (2)</a>
+          </li>
+        </ul>
+
+        <!-- Hero -->
+        <div class="div-story-hero2 div-feature-animate-image">
+          <img src="../../img/story_music_hero_1400x476.jpg" alt="Producer Robot és Társa">
+          <a class="a-story-category-chip" href="zene.html"><span
+              class="span-hero-card-tag span-hero-card-tag-music">Zene</span></a>
+        </div>
+
+        <p class="p-story-copy">
+          A zeneipar történetének egyik legnagyobb átalakulása előtt állunk. Egy új fejlesztés szerint hamarosan
+          megjelenik az első olyan mesterséges intelligencia alapú zeneszerző, amely nemcsak komponál, hanem önállóan
+          képes emberi zenészeket felbérelni és irányítani az online térben.
+        </p>
+
+        <p class="p-story-copy">
+          Ez az AI nem egyszerű eszköz: döntéseket hoz, projekteket indít, és konkrét feladatokat oszt ki zenészeknek.
+          Olyan, mintha egy producer, egy zeneszerző és egy menedzser egyetlen digitális entitásban egyesülne.
+        </p>
+
+        <!-- 2 kép -->
+        <div class="div-grid-2 div-feature-animate-image">
+          <img src="../../img/story_music_ai1_800x576.jpg" alt="Ai agy">
+          <img src="../../img/story_music_ai2_800x576.jpg" alt="Ai Agent">
+        </div>
+
+        <p class="p-story-copy">
+          A rendszer képes elemezni a piaci trendeket, felismeri a népszerű stílusokat, majd ezek alapján komponál új
+          dalokat. Ezután kiválasztja a megfelelő zenészeket különböző platformokról, és konkrét feladatokat ad nekik –
+          például gitárfelvétel, vokál vagy hangszerelés.
+        </p>
+
+        <!-- Quote -->
+        <blockquote class="blockquote-story">
+          „Nem az a kérdés, hogy az AI tud-e zenét írni, hanem az, hogy mikor kezd el embereket irányítani.”
+        </blockquote>
+
+        <!-- Képek -->
+        <div class="div-grid-mix">
+          <img src="../../img/story_music_ai3_1123x823.jpg" alt="Ai droidok emberrekkel dolgoznak">
+          <img src="../../img/story_music_ai4_500x700.jpg" alt="Öltönyös ember VR szemüveggel">
+        </div>
+
+        <p class="p-story-copy">
+          Ez a modell teljesen új gazdasági rendszert hozhat létre. A zenészek már nem feltétlenül emberekhez vagy
+          kiadókhoz szerződnek, hanem algoritmusokhoz. Egy AI döntheti el, ki kap munkát – és ki nem.
+        </p>
+
+        <!-- Táblázat -->
+        <table class="table-story">
+          <tr>
+            <th>Funkció</th>
+            <th>Emberi producer</th>
+            <th>AI zeneszerző</th>
+          </tr>
+          <tr>
+            <td>Zeneszerzés</td>
+            <td>Igen</td>
+            <td>Igen (automatizált)</td>
+          </tr>
+          <tr>
+            <td>Zenészek kiválasztása</td>
+            <td>Kapcsolatok alapján</td>
+            <td>Adatalapon</td>
+          </tr>
+          <tr>
+            <td>Döntéshozatal</td>
+            <td>Szubjektív</td>
+            <td>Algoritmikus</td>
+          </tr>
+          <tr>
+            <td>Skálázhatóság</td>
+            <td>Korlátozott</td>
+            <td>Gyakorlatilag végtelen</td>
+          </tr>
+        </table>
+
+        <!-- 3 Kép -->
+        <div class="div-grid-3">
+          <img src="../../img/story_music_ai5_600x600.jpg" alt="Ai AllinOne Zeneszerző">
+          <img src="../../img/story_music_ai6_473x473.jpg" alt="Nyáklap és kotta">
+          <img src="../../img/story_music_ai7_600x600.jpg" alt="Ai zongorista és egy hegedülő nő">
+        </div>
+
+        <p class="p-story-copy">
+          A kérdés már nem az, hogy ez megtörténik-e, hanem az, hogy hogyan alakítja át a kreatív iparágakat. Egyesek
+          szerint ez a kreativitás halála, mások szerint viszont egy új korszak kezdete, ahol az ember és a gép együtt
+          alkot.
+        </p>
+
+        <p class="p-story-copy">
+          Egy biztos: az AI zeneszerzők megjelenése teljesen újradefiniálja, mit jelent művésznek lenni a digitális
+          korban.
+        </p>
+
+        <!-- Szerző -->
+
+        <div class="div-story-author-card">
+          <img class="img-story-author-photo" src="../../img/writer_janos_s_408x400.jpg" alt="Saunders János" />
+          <div>
+            <span class="span-story-author-label">Szerző</span>
+            <h4 class="h4-story-small-title">
+              <a href="../../szerkesztok.html#saundersjanos">Saunders János</a>
+            </h4>
+            <p class="p-story-copy div-margin-b0">
+              A modern popkultúra lelkes követője, aki egyszerre rajong a zenéért és a filmekért. Kritikáiban a
+              hangzásvilág, a ritmus és a filmes élmény kapcsolatát vizsgálja, miközben figyelmet fordít arra is, hogyan
+              változtatja meg a streaming és a digitális platformok a közönség ízlését. Leginkább azokat az alkotásokat
+              keresi, amelyek érzelmileg is hatnak, és maradandó élményt nyújtanak.
+            </p>
+          </div>
+        </div>
+
+        <div class="div-story-comments">
+          <h3 id="komment" class="h3-story-heading">Hozzászólások</h3>
+
+
+          <ol class="ol-story-comment-list" id="ol-story-comment-list">
+            <li class="li-story-comment-item static-comment">
+              <div class="div-story-comment-card">
+                <img class="img-story-comment-avatar" src="https://picsum.photos/seed/commenter-80/96/96"
+                  alt="Kommentelő" />
+                <div class="div-story-comment-head">
+                  <h5 class="h5-story-comment-name">
+                    Marton László
+                  </h5>
+                  <span class="span-story-comment-date">2026. március 15. 14:21</span>
+                </div>
+                <div class="div-story-comment-text">
+                  Ez biztosan nem fog működni még egy jó darabig megbízhatóan!
+                </div>
+              </div>
+
+              <ul class="ul-story-comment-children">
+                <li class="li-story-comment-item static-comment">
+                  <div class="div-story-comment-card">
+                    <img class="img-story-comment-avatar" src="https://picsum.photos/seed/commenter-81/96/96"
+                      alt="Kommentelő" />
+                    <div class="div-story-comment-head">
+                      <h5 class="h5-story-comment-name">
+                        Haller Zsolt
+                      </h5>
+                      <span class="span-story-comment-date">2026. március 26. 17:08</span>
+                    </div>
+                    <div class="div-story-comment-text">
+                      Nekem tetszik ez a szolgáltatási lehetőség. Ha lehet majd igénybe fogom venni biztosan!
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </li>
+            <li class="li-story-comment-item static-comment">
+              <div class="div-story-comment-card">
+                <img class="img-story-comment-avatar" src="https://picsum.photos/seed/commenter-89/96/96"
+                  alt="Kommentelő" />
+                <div class="div-story-comment-head">
+                  <h5 class="h5-story-comment-name">
+                    Éger Lilla
+                  </h5>
+                  <span class="span-story-comment-date">2026. március 27. 13:19</span>
+                </div>
+                <div class="div-story-comment-text">
+                  Nekem van ilyen ismerősöm, aki ezzel foglalkozik. Láttam hogyan dolgozik. Ezt AI nem tudja olyan
+                  minőségben csinálni! Kizárt!
+                </div>
+              </div>
+            </li>
+          </ol>
+
+          <form class="form-story-reply-form" action="#" method="post" id="form-story-reply-form"
+            data-story-id="ai-zeneszerzo">
+            <input class="input-story-field" placeholder="Név" name="story_author_name" id="input-story-author-name"
+              type="text" required maxlength="16" />
+            <input class="input-story-field" placeholder="E-mail" name="story_author_email"
+              id="input-story-author-email" type="email" required />
+            <textarea class="textarea-story-field" name="story_comment_body" id="textarea-story-comment-body"
+              placeholder="Írd meg a véleményed!" required maxlength="1500"></textarea>
+            <button class="button-story-submit" type="submit" id="button-story-submit-main">Komment
+              elküldése</button>
+            <label class="label-consent">
+              <input type="checkbox" name="adatkezeles" id="adatkezeles" required>
+              A komment elküldésével elfogadom, hogy az általam megadott adatokat
+              a weboldal üzemeltetője a kapcsolatfelvétel és ügyintézés céljából kezelje
+              az <a href="../../adatkezelesi.html" target="_blank"><b><ins>Adatkezelési Tájékoztatóban</b></ins></a>
+              foglaltak szerint.
+            </label>
+
+          </form>
+
+          <ol id="ol-story-comment-list"></ol>
+
+          <div class="div-story-user-comment-list" id="div-story-user-comment-list"></div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================
+         LÁBLÉC
+    ========================= -->
+
+    <footer class="footer-main-shell">
+      <div class="footer-content-width">
+        <!-- Felső Line Blokk -->
+
+        <div class="div-footer-top-grid">
+          <!-- Egy blokk -->
+          <div class="div-footer-col">
+            <h4 class="h4-footer-title">
+              <a href="../zene/zene.html">Zene</a>
+            </h4>
+          </div>
+
+          <div class="div-footer-col">
+            <h4 class="h4-footer-title">
+              <a href="../film/film.html">Film</a>
+            </h4>
+          </div>
+
+          <div class="div-footer-col">
+            <h4 class="h4-footer-title">
+              <a href="../sport/sport.html">Sport</a>
+            </h4>
+          </div>
+
+          <div class="div-footer-col">
+            <h4 class="h4-footer-title">
+              <a href="../utazas/utazas.html">Utazás</a>
+            </h4>
+          </div>
+
+          <div class="div-footer-col">
+            <h4 class="h4-footer-title">
+              <a href="../tech/tech.html">Tech</a>
+            </h4>
+          </div>
+
+          <div class="div-footer-col">
+            <h4 class="h4-footer-title">
+              <a href="../humor/humor.html">Humor</a>
+            </h4>
+          </div>
+        </div>
+
+        <!-- Logo -->
+
+        <div class="div-footer-middle-row">
+          <div class="div-footer-logo">
+            <a href="../../index.html">
+              <img src="../../img/w_logo.png" alt="Logo" />
+            </a>
+          </div>
+          <div class="div-footer-link">
+            <a href="../../adatkezelesi.html"> Adatkezelési Tájékoztató</a>
+          </div>
+          <div class="div-footer-link">
+            <a href="https://www.prooktatas.hu" target="_blank">Prooktatás</a>
+          </div>
+        </div>
+
+        <!-- Copyright -->
+
+        <div class="div-footer-bottom-row">
+          <div class="div-footer-copy-text">
+            Copyright © <span id="current-year"></span> <span>Sztorimix</span>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Felfelé mutató nyíl -->
+
+    <a id="scrollToTopBtn" class="link-floating-btn" href="#sitetop" aria-label="Kép gomb">
+      <img src="../../img/up_button_300x300.png" alt="Vissza a lap tetejére!">
+    </a>
+
+    <script src="../../js/scrolltopbutton.js"></script>
+    <script src="../../js/date.js"></script>
+    <script src="../../js/mobilemenu.js"></script>
+    <script src="../../js/currentyear.js"></script>
+    <script src="../../js/post2.js"></script>
+</body>
+
+</html>
