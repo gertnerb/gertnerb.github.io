@@ -1,21 +1,14 @@
-const formStoryReplyForm = document.querySelector("#form-story-reply-form");
-const inputStoryAuthorName = document.querySelector("#input-story-author-name");
-const textareaStoryCommentBody = document.querySelector("#textarea-story-comment-body");
-const olStoryCommentList = document.querySelector("#ol-story-comment-list");
+const form = document.querySelector("#form-story-reply-form");
+const nameInput = document.querySelector("#input-story-author-name");
+const messageInput = document.querySelector("#textarea-story-comment-body");
+const list = document.querySelector("#ol-story-comment-list");
 
-if (
-  formStoryReplyForm &&
-  inputStoryAuthorName &&
-  textareaStoryCommentBody &&
-  olStoryCommentList
-) {
-  const storyId = formStoryReplyForm.dataset.storyId;
+if (form && nameInput && messageInput && list) {
+  const storyId = form.dataset.storyId;
   const storageKey = `storyComments_${storyId}`;
 
-  function getCurrentCommentDate() {
-    const nowDate = new Date();
-
-    return nowDate.toLocaleString("hu-HU", {
+  function getDate() {
+    return new Date().toLocaleString("hu-HU", {
       year: "numeric",
       month: "long",
       day: "numeric",
@@ -24,96 +17,72 @@ if (
     });
   }
 
-  function getRandomAvatarUrl() {
-    const randomNumber = Math.floor(Math.random() * 100);
-    return `https://picsum.photos/seed/story-comment-${randomNumber}/96/96`;
+  function getAvatar() {
+    return `https://picsum.photos/seed/${Math.random()}/96/96`;
   }
 
-  function createCommentListItem(commentData) {
-    const liStoryCommentItem = document.createElement("li");
-    liStoryCommentItem.className = "li-story-comment-item";
+  function createComment(data) {
+    const li = document.createElement("li");
+    li.className = "li-story-comment-item";
 
-    const divStoryCommentCard = document.createElement("div");
-    divStoryCommentCard.className = "div-story-comment-card";
+    li.innerHTML = `
+      <div class="div-story-comment-card">
+        <img class="img-story-comment-avatar" src="${data.avatar}" alt="Kommentelő">
+        <div class="div-story-comment-head">
+          <h5 class="h5-story-comment-name">${data.name}</h5>
+          <span class="span-story-comment-date">${data.date}</span>
+        </div>
+        <div class="div-story-comment-text">${data.message}</div>
+      </div>
+    `;
 
-    const imgStoryCommentAvatar = document.createElement("img");
-    imgStoryCommentAvatar.className = "img-story-comment-avatar";
-    imgStoryCommentAvatar.src = commentData.avatar;
-    imgStoryCommentAvatar.alt = "Kommentelő";
-
-    const divStoryCommentHead = document.createElement("div");
-    divStoryCommentHead.className = "div-story-comment-head";
-
-    const h5StoryCommentName = document.createElement("h5");
-    h5StoryCommentName.className = "h5-story-comment-name";
-
-    const aStoryCommentNameLink = document.createElement("a");
-    aStoryCommentNameLink.href = "#";
-    aStoryCommentNameLink.textContent = commentData.name;
-
-    h5StoryCommentName.appendChild(aStoryCommentNameLink);
-
-    const spanStoryCommentDate = document.createElement("span");
-    spanStoryCommentDate.className = "span-story-comment-date";
-    spanStoryCommentDate.textContent = commentData.date;
-
-    const divStoryCommentText = document.createElement("div");
-    divStoryCommentText.className = "div-story-comment-text";
-    divStoryCommentText.textContent = commentData.message;
-
-    divStoryCommentHead.appendChild(h5StoryCommentName);
-    divStoryCommentHead.appendChild(spanStoryCommentDate);
-
-    divStoryCommentCard.appendChild(imgStoryCommentAvatar);
-    divStoryCommentCard.appendChild(divStoryCommentHead);
-    divStoryCommentCard.appendChild(divStoryCommentText);
-
-    liStoryCommentItem.appendChild(divStoryCommentCard);
-
-    return liStoryCommentItem;
+    return li;
   }
 
-  function getSavedComments() {
+  function getSaved() {
     return JSON.parse(localStorage.getItem(storageKey)) || [];
   }
 
-  function saveComment(commentData) {
-    const savedComments = getSavedComments();
-    savedComments.push(commentData);
-    localStorage.setItem(storageKey, JSON.stringify(savedComments));
+  function save(data) {
+    const comments = getSaved();
+    comments.push(data);
+    localStorage.setItem(storageKey, JSON.stringify(comments));
   }
 
-  function renderSavedComments() {
-  const savedComments = getSavedComments();
+  function renderSaved() {
+    const comments = getSaved();
 
-  savedComments.forEach((commentData) => {
-    const liStoryCommentItem = createCommentListItem(commentData);
-    olStoryCommentList.appendChild(liStoryCommentItem);
-  });
-}
+    comments.forEach(c => {
+      list.appendChild(createComment(c));
+    });
+  }
 
-  formStoryReplyForm.addEventListener("submit", function (event) {
-    event.preventDefault();
+  // 👉 SUBMIT
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
 
-    const authorNameValue = inputStoryAuthorName.value.trim();
-    const commentBodyValue = textareaStoryCommentBody.value.trim();
+    const name = nameInput.value.trim();
+    const message = messageInput.value.trim();
 
-    if (!authorNameValue || !commentBodyValue) {
-      alert("A név és az üzenet kitöltése kötelező.");
-      return;
-    }
+    if (!name || !message) return;
 
-    const commentData = {
-      name: authorNameValue,
-      message: commentBodyValue,
-      date: getCurrentCommentDate(),
-      avatar: getRandomAvatarUrl()
+    const data = {
+      name,
+      message,
+      date: getDate(),
+      avatar: getAvatar()
     };
 
-    saveComment(commentData);
-    renderSavedComments();
-    formStoryReplyForm.reset();
+    save(data);
+
+    // csak az új komment
+    list.appendChild(createComment(data));
+
+    form.reset();
+
+    // 🔥 értesítjük a számlálót
+    document.dispatchEvent(new Event("commentAdded"));
   });
 
-  renderSavedComments();
+  renderSaved();
 }
