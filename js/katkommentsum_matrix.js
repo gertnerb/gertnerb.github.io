@@ -1,3 +1,6 @@
-const baseComments = 2; // ennyi van HTML-ben
+document.addEventListener("DOMContentLoaded", () => {
+  const el = document.getElementById("commentCount_matrix-titkok");
+  if (!el) return;
 
-const total = baseComments + getCommentCount("matrix-titkok");
+  el.textContent = localStorage.getItem("commentCount_matrix-titkok") ?? 2;
+});

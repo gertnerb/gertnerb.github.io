@@ -8,8 +8,6 @@ function updateCommentCount() {
   counter.textContent = count;
 }
 
-// betöltéskor
 document.addEventListener("DOMContentLoaded", updateCommentCount);
 
-// 🔥 amikor új komment jön
 document.addEventListener("commentAdded", updateCommentCount);

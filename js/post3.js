@@ -49,6 +49,11 @@ if (form && nameInput && messageInput && list) {
     localStorage.setItem(storageKey, JSON.stringify(comments));
   }
 
+  function saveCommentCount() {
+    const count = list.querySelectorAll(".li-story-comment-item").length;
+    localStorage.setItem(`commentCount_${storyId}`, String(count));
+  }
+
   function renderSaved() {
     const comments = getSaved();
 
@@ -57,7 +62,6 @@ if (form && nameInput && messageInput && list) {
     });
   }
 
-  // 👉 SUBMIT
   form.addEventListener("submit", function (e) {
     e.preventDefault();
 
@@ -74,15 +78,14 @@ if (form && nameInput && messageInput && list) {
     };
 
     save(data);
-
-    // csak az új komment
     list.appendChild(createComment(data));
-
     form.reset();
 
-    // 🔥 értesítjük a számlálót
+    saveCommentCount();
+
     document.dispatchEvent(new Event("commentAdded"));
   });
 
   renderSaved();
+  saveCommentCount();
 }
