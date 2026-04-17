@@ -3376,9 +3376,6 @@ SZERKESZTŐK STÍLUSOK
     gap: 10px 14px;
   }
 
-
-  }
-
   .li-post-meta-item:not(:first-child) {
     padding-left: 14px;
   }
@@ -3661,6 +3658,7 @@ SZERKESZTŐK STÍLUSOK
     height: 60px;
     font-size: 26px;
   }
+}
 
 @media (max-width: 567px) {
   .div-site-wraper {
