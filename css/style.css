@@ -1635,7 +1635,7 @@ KATEGÓRIA BEJEGYZÉS KÁRTYA
   position: relative;
 
   color: #666666;
-  font-size: clamp(11px, 1.2vw, 13px);
+  font-size: clamp(10px, 0.9vw, 13px);
   font-weight: 700;
   line-height: 1.4;
   text-transform: uppercase;
@@ -1665,7 +1665,7 @@ KATEGÓRIA BEJEGYZÉS KÁRTYA
   position: relative;
 
   color: #666666;
-  font-size: clamp(11px, 1.2vw, 13px);
+  font-size: clamp(10px, 0.9vw, 13px);
   font-weight: 700;
   line-height: 1.4;
   text-transform: uppercase;
@@ -1673,7 +1673,7 @@ KATEGÓRIA BEJEGYZÉS KÁRTYA
 }
 
 .li-post-meta-item2 a {
-  font-size: clamp(9px, 1.2vw, 12px);
+  font-size: clamp(10px, 0.9vw, 13px);
 }
 
 .span-post-meta {
@@ -3376,8 +3376,7 @@ SZERKESZTŐK STÍLUSOK
     gap: 10px 14px;
   }
 
-  .li-post-meta-item {
-    font-size: 12px;
+
   }
 
   .li-post-meta-item:not(:first-child) {
