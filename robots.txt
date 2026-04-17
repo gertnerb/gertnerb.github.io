@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://gertnerb.github.io/sitemap.xml
