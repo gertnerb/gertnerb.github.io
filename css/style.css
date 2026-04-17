@@ -1635,7 +1635,7 @@ KATEGÓRIA BEJEGYZÉS KÁRTYA
   position: relative;
 
   color: #666666;
-  font-size: 13px;
+  font-size: clamp(11px, 1.2vw, 13px);
   font-weight: 700;
   line-height: 1.4;
   text-transform: uppercase;
@@ -1665,11 +1665,15 @@ KATEGÓRIA BEJEGYZÉS KÁRTYA
   position: relative;
 
   color: #666666;
-  font-size: 13px;
+  font-size: clamp(11px, 1.2vw, 13px);
   font-weight: 700;
   line-height: 1.4;
   text-transform: uppercase;
   letter-spacing: 0.3px;
+}
+
+.li-post-meta-item2 a {
+  font-size: clamp(9px, 1.2vw, 12px);
 }
 
 .span-post-meta {
@@ -1677,7 +1681,7 @@ KATEGÓRIA BEJEGYZÉS KÁRTYA
   margin-right: 5px;
 
   color: #666666;
-  font-size: 14px;
+  font-size: clamp(10px, 1.2vw, 13px);
   font-weight: 800;
   line-height: 1;
 }
